@@ -50,7 +50,7 @@
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
           <form class="review__form form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset>
+            <fieldset class="form__name">
               <legend class="review__title title">Представьтесь:</legend>
               <label class="form__field-title">ИМЯ*:
                 <input class="form__input title" type="text" value="Пётр">
@@ -62,7 +62,7 @@
                 <input class="form__input title" type="text" value="Викторович">
               </label>
             </fieldset>
-            <fieldset>
+            <fieldset class="form__tel-mail">
               <legend class="review__title title">Контактная информация:</legend>
               <label class="form__field-title">Контактный телефон*:
                 <input class="form__input form__input--opacity form__input--phone-icon title" type="text" placeholder="Введите телефон">
@@ -71,7 +71,7 @@
                 <input class="form__input form__input--opacity form__input--mail-icon title" type="email" placeholder="Введите e-mail">
               </label>
             </fieldset>
-            <fieldset>
+            <fieldset class="radio">
               <legend class="review__title title">ВАше Общее впечатление:</legend>
               <ul class="form__grade-list site-list">
                 <li class="form__grade-item">
@@ -97,7 +97,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="checkbox">
               <legend class="review__title title">посещенные достопримечательности:</legend>
               <ul class="form__visited-places-list site-list">
                 <li class="form__visited-places-item">
@@ -130,7 +130,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="text-review">
               <legend class="review__title title">Опишите свои эмоции:</legend>
               <textarea class="form__input--opacity title" name="Эмоции подробно" cols="30" rows="6" placeholder="Опишите подробно все свои восторги "></textarea>
               <input class="form__submit button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
