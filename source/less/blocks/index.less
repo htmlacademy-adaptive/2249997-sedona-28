@@ -20,8 +20,9 @@
   color: rgba(255, 255, 255, 1);
 }
 
-.hotel-search {
-
+.hotel-search__title {
+  font-weight: 700;
+  font-size: 21px;
 }
 
 .hotel-search__wrapper {
@@ -32,6 +33,21 @@
   .advantages__list {
     display: grid;
     grid-template-columns: repeat(3, 256px);
+  }
+
+  .advantage--blue-background {
+    grid-column: 1/4;
+    display: flex;
+  }
+
+  .devil-brigde {
+    order: -1;
+  }
+}
+@media (min-width: @desktop-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
   }
 
   .advantage--blue-background {
