@@ -2,25 +2,28 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная страница: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img src="./img/page-logo.svg" width="185" height="96" alt="Логотип Седона" class="logo__image">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
-        </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <a class="main-header__logo">
+            <img src="./img/page-logo.svg" width="185" height="96" alt="Логотип Седона" class="logo__image">
+          </a>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list list-left site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="#" class="site-list__link title button">Главная</a>
+              <a href="#" class="site-list__link site-list__link--active title button">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html" class="site-list__link title button">Фото и видео</a>
             </li>
+          </ul>
+          <ul class="main-nav__list list-right site-list">
             <li class="site-list__item">
               <a href="form.html" class="site-list__link title button">Форма Отзыва</a>
             </li>
@@ -45,10 +48,14 @@
           <p class="advantages__reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           <ul class="advantages__list site-list">
             <li class="advantages__item advantage advantage--blue-background">
-              <h3 class="advantage__title title advantage__title--blue-background">НАСТОЯЩИЙ ГОРОДОК</h3>
-              <p class="advantage__decoration-numbers advantage__decoration-numbers--blue-background">— №1 —</p>
-              <p class="advantage__description advantage__description--blue-background">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-              <img class="advantage__image" src="./img/index/advantages-city.jpg" alt="Фото города Седона" width="320" height="260">
+              <div class="advantage__wrapper">
+                <h3 class="advantage__title title advantage__title--blue-background">НАСТОЯЩИЙ ГОРОДОК</h3>
+                <p class="advantage__decoration-numbers advantage__decoration-numbers--blue-background">— №1 —</p>
+                <p class="advantage__description advantage__description--blue-background">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+              </div>
+              <div class="advantage__image-wrapper">
+                <img class="advantage__image" src="./img/index/advantages-city.jpg" alt="Фото города Седона" width="320" height="260">
+              </div>
             </li>
             <li class="advantages__item advantage advantage--housing">
               <h3 class="advantage__title title">Жилье</h3>
@@ -63,10 +70,15 @@
               <p class="advantage__description">Не только китайского, но и местного производства!</p>
             </li>
             <li class="advantages__item advantage advantage--blue-background">
-              <h3 class="advantage__title title advantage__title--blue-background">ТАМ ЕСТЬ Мост дьявола</h3>
-              <p class="advantage__decoration-numbers advantage__decoration-numbers--blue-background">— №2 —</p>
-              <p class="advantage__description advantage__description--blue-background">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-              <img class="advantage__image" src="./img/index/advantages-mountains.jpg" alt="Фото моста дьявола" width="320" height="260">
+              <div class="advantage__wrapper">
+                <h3 class="advantage__title title advantage__title--blue-background">ТАМ ЕСТЬ Мост дьявола</h3>
+                <p class="advantage__decoration-numbers advantage__decoration-numbers--blue-background">— №2 —</p>
+                <p class="advantage__description advantage__description--blue-background">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              </div>
+              <div class="advantage__image-wrapper devil-brigde">
+                <img class="advantage__image" src="./img/index/advantages-mountains.jpg" alt="Фото моста дьявола" width="320" height="260">
+              </div>
+
             </li>
             <li class="advantages__item advantage advantage--gray-background">
               <h3 class="advantage__title title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>

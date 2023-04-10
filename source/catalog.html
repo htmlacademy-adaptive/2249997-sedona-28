@@ -2,25 +2,28 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img src="./img/page-logo.svg" width="185" height="96" alt="Логотип Седона" class="logo__image">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
-        </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+          <a class="main-header__logo">
+            <img src="./img/page-logo.svg" width="185" height="96" alt="Логотип Седона" class="logo__image">
+          </a>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list list-left site-list">
+            <li class="site-list__item">
               <a href="index.html" class="site-list__link title button">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="#" class="site-list__link title button">Фото и видео</a>
+            <li class="site-list__item site-list__item--active">
+              <a href="#" class="site-list__link site-list__link--active title button">Фото и видео</a>
             </li>
+          </ul>
+          <ul class="main-nav__list list-right site-list">
             <li class="site-list__item">
               <a href="form.html" class="site-list__link title button">Форма Отзыва</a>
             </li>
@@ -48,34 +51,42 @@
           <ul class="gallery__list site-list">
             <li class="gallery__item">
               <img class="gallery__image image" src="./img/catalog/catalog-road.jpg" width="280" height="280" alt="Дорога">
-              <p class="image__title">неродные просторы</p>
-              <p class="image__author">Автор фото: Борис</p>
-              <p class="image__likes-number">1350</p>
+              <div class="image__description">
+                <p class="image__title">неродные просторы</p>
+                <p class="image__author">Автор фото: Борис</p>
+                <p class="image__likes-number">1350</p>
+              </div>
             </li>
             <li class="gallery__item">
               <img class="gallery__image image" src="./img/catalog/catalog-cactus.jpg" width="280" height="280" alt="Кактусы">
-              <p class="image__title">Местная растительность</p>
-              <p class="image__author">Автор фото: Сергей</p>
-              <p class="image__likes-number">143</p>
+              <div class="image__description">
+                <p class="image__title">Местная растительность</p>
+                <p class="image__author">Автор фото: Сергей</p>
+                <p class="image__likes-number">143</p>
+              </div>
             </li>
             <li class="gallery__item">
               <img class="gallery__image image" src="./img/catalog/catalog-forest-road.jpg" width="280" height="280" alt="Лесная дорога">
-              <p class="image__title">Дорога на север</p>
-              <p class="image__author">Aвтор фото: Петр</p>
-              <p class="image__likes-number">96</p>
+              <div class="image__description">
+                <p class="image__title">Дорога на север</p>
+                <p class="image__author">Aвтор фото: Петр</p>
+                <p class="image__likes-number">96</p>
+              </div>
             </li>
             <li class="gallery__item">
               <img class="gallery__image image" src="./img/catalog/catalog-mountain-devil.jpg" width="280" height="280" alt="Горы дьявола">
-              <p class="image__title">Мост дьявола</p>
-              <p class="image__author">Aвтор фото: Антон</p>
-              <p class="image__likes-number">254</p>
-            </li>
-            <li class="gallery__item">
-              <p class="video__title title">Все еще сомневаетесь?</p>
-              <p class="video__description">Cмотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-              <img class="gallery__video video" src="./img/catalog/catalog-video-preview.jpg" width="280" height="177" alt="Видеоролик">
+              <div class="image__description">
+                <p class="image__title">Мост дьявола</p>
+                <p class="image__author">Aвтор фото: Антон</p>
+                <p class="image__likes-number">254</p>
+              </div>
             </li>
           </ul>
+          <section class="video">
+            <p class="video__title title">Все еще сомневаетесь?</p>
+            <p class="video__description">Cмотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <img class="gallery__video video" src="./img/catalog/catalog-video-preview.jpg" width="280" height="177" alt="Видеоролик">
+          </section>
         </div>
       </section>
     </main>
@@ -85,7 +96,7 @@
           <p class="tag__text">#visitSEDONA</p>
         </div>
         <div class="main-footer__socials social">
-          <ul class="social__list">
+          <ul class="social__list site-list">
             <li class="social__item social__item--vk">
               <a class="social__link" href="https://vk.com/htmlacademy" >Мы в ВК</a>
             </li>

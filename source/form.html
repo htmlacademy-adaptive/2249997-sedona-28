@@ -2,27 +2,30 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Форма для отзыва: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img src="./img/page-logo.svg" width="185" height="96" alt="Логотип Седона" class="logo__image">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
-        </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+          <a class="main-header__logo">
+            <img src="./img/page-logo.svg" width="185" height="96" alt="Логотип Седона" class="logo__image">
+          </a>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list list-left site-list">
+            <li class="site-list__item">
               <a href="index.html" class="site-list__link title button">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html" class="site-list__link title button">Фото и видео</a>
             </li>
-            <li class="site-list__item">
-              <a href="#" class="site-list__link title button">Форма Отзыва</a>
+          </ul>
+          <ul class="main-nav__list list-right site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="#" class="site-list__link site-list__link--active title button">Форма Отзыва</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link title button" href="https://htmlacademy.ru">HTML ACADEMY</a>
@@ -47,7 +50,7 @@
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
           <form class="review__form form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset>
+            <fieldset class="form__name">
               <legend class="review__title title">Представьтесь:</legend>
               <label class="form__field-title">ИМЯ*:
                 <input class="form__input title" type="text" value="Пётр">
@@ -59,7 +62,7 @@
                 <input class="form__input title" type="text" value="Викторович">
               </label>
             </fieldset>
-            <fieldset>
+            <fieldset class="form__tel-mail">
               <legend class="review__title title">Контактная информация:</legend>
               <label class="form__field-title">Контактный телефон*:
                 <input class="form__input form__input--opacity form__input--phone-icon title" type="text" placeholder="Введите телефон">
@@ -68,7 +71,7 @@
                 <input class="form__input form__input--opacity form__input--mail-icon title" type="email" placeholder="Введите e-mail">
               </label>
             </fieldset>
-            <fieldset>
+            <fieldset class="radio">
               <legend class="review__title title">ВАше Общее впечатление:</legend>
               <ul class="form__grade-list site-list">
                 <li class="form__grade-item">
@@ -94,7 +97,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="checkbox">
               <legend class="review__title title">посещенные достопримечательности:</legend>
               <ul class="form__visited-places-list site-list">
                 <li class="form__visited-places-item">
@@ -127,7 +130,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="text-review">
               <legend class="review__title title">Опишите свои эмоции:</legend>
               <textarea class="form__input--opacity title" name="Эмоции подробно" cols="30" rows="6" placeholder="Опишите подробно все свои восторги "></textarea>
               <input class="form__submit button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">

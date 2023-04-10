@@ -1,24 +1,70 @@
 .form {
 
 }
+
 .form__review {
 
 }
+
 .review {
 
 }
+
 .review__wrapper {
   padding-top: 36px;
 }
+
 .modal {
 
 }
+
 .modal__wrapper {
 
 }
+
 .form__sent-message {
-  margin:auto;
+  margin: auto;
+  display: none;
 }
+
 .form__error-message {
-  margin:auto;
+  margin: auto;
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+  }
+  // Радиокнопки отвечающие за общее впечатление
+  .radio {
+    grid-column: 1/3;
+  }
+  // Чекбоксы отвечающие за посещенные достопримечательности
+  .checkbox {
+    grid-column: 1/3;
+  }
+
+  .text-review {
+    grid-column: 1/3;
+  }
+}
+@media (min-width: @desktop-width) {
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+  }
+  // Радиокнопки отвечающие за общее впечатление
+  .radio {
+    grid-column: 1/3;
+  }
+  // Чекбоксы отвечающие за посещенные достопримечательности
+  .checkbox {
+    grid-column: 1/3;
+  }
+
+  .text-review {
+    grid-column: 1/3;
+  }
 }

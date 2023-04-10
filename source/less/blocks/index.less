@@ -1,9 +1,11 @@
 .advantages {
 
 }
+
 .advantages__wrapper {
   padding-top: 32px;
 }
+
 .advantage {
   &--blue-background {
     background-color: rgba(129, 179, 210, 1);
@@ -13,12 +15,47 @@
     background-color: rgba(238, 238, 238, 1);
   }
 }
+
 .advantage__title--blue-background {
   color: rgba(255, 255, 255, 1);
 }
-.hotel-search {
 
+.hotel-search__title {
+  font-weight: 700;
+  font-size: 21px;
 }
+
 .hotel-search__wrapper {
   padding-top: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(3, 256px);
+  }
+
+  .advantage--blue-background {
+    grid-column: 1/4;
+    display: flex;
+  }
+
+  .devil-brigde {
+    order: -1;
+  }
+}
+@media (min-width: @desktop-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+  }
+
+  .advantage--blue-background {
+    grid-column: 1/4;
+    display: flex;
+  }
+
+  .devil-brigde {
+    order: -1;
+  }
 }
