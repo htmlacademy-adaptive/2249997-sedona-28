@@ -312,4 +312,51 @@
   .devil-brigde {
     order: -1;
   }
+
+  .advantage {
+    &--housing {
+      &::before {
+        content: "";
+        background-image: url("/img/index/icon-house.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 77px;
+        height: 72px;
+        z-index: 2;
+        position: absolute;
+        left: 40%;
+        top: 60px;
+      }
+    }
+
+    &--meal {
+      &::before {
+        content: "";
+        background-image: url("/img/index/icon-burger.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 77px;
+        height: 72px;
+        z-index: 2;
+        position: absolute;
+        left: 40%;
+        top: 60px;
+      }
+    }
+
+    &--souvenirs {
+      &::before {
+        content: "";
+        background-image: url("/img/index/icon-gift.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 67px;
+        height: 80px;
+        z-index: 2;
+        position: absolute;
+        left: 42%;
+        top: 60px;
+      }
+    }
+  }
 }
