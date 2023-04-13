@@ -24,24 +24,46 @@
 
 .copyright__link {
   position: relative;
+  vertical-align: middle;
   text-decoration: none;
   color: hsl(0, 0%, 0%);
   display: inline-block;
   padding: 7px 0;
   padding-right: 40px;
 
-  &::after {
-    content: "";
-    background-image: url("/img/htmlacademy-black.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 27px;
-    height: 34px;
-    z-index: 2;
+  svg {
     position: absolute;
-    right: 0;
     top: 0;
+    right: 0;
   }
+
+  &:hover {
+    color: rgba(129, 179, 210, 1);
+  }
+
+  &:hover path {
+    fill: rgba(129, 179, 210, 1);
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
+  &:active path {
+    fill: #b3b3b3;
+  }
+  // &::after {
+  //   content: "";
+  //   background-image: url("/img/htmlacademy-black.svg");
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   width: 27px;
+  //   height: 34px;
+  //   z-index: 2;
+  //   position: absolute;
+  //   right: 0;
+  //   top: 0;
+  // }
 }
 
 .main-footer__socials {
@@ -52,58 +74,18 @@
 .social__item {
   padding-left: 6px;
 
-  &--vk {
-    position: relative;
-    width: 48px;
-    height: 48px;
-
-    &::after {
-      content: "";
-      background-image: url("/img/social-vk.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 48px;
-      height: 48px;
-      z-index: 2;
-      position: absolute;
-    }
+  &:hover rect {
+    fill: rgba(102, 158, 192, 1);
   }
 
-  &--telegram {
-    position: relative;
-    width: 48px;
-    height: 48px;
-
-    &::after {
-      content: "";
-      background-image: url("/img/social-tg.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 48px;
-      height: 48px;
-      z-index: 2;
-      position: absolute;
-    }
+  &:active rect {
+    fill: rgba(84, 150, 189, 1);
   }
 
-  &--youtube {
-    position: relative;
-    width: 48px;
-    height: 48px;
-
-    &::after {
-      content: "";
-      background-image: url("/img/social-yt.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 48px;
-      height: 48px;
-      z-index: 2;
-      position: absolute;
-    }
+  &:active path {
+    opacity: 0.5;
   }
 }
-
 // TABLET
 @media (min-width: @tablet-width) {
   .main-footer__wrapper {
