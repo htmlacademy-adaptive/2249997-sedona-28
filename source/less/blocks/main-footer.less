@@ -1,21 +1,110 @@
-.main-footer {
-
-}
-
 .main-footer__wrapper {
   padding-top: 8px;
 }
 
+.tag__text {
+  margin: 0;
+  padding-top: 33px;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+}
+
 .social__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .copyright {
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
+.copyright__link {
+  position: relative;
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  display: inline-block;
+  padding: 7px 0;
+  padding-right: 40px;
+
+  &::after {
+    content: "";
+    background-image: url("/img/htmlacademy-black.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 27px;
+    height: 34px;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.main-footer__socials {
+  margin: 0;
+  padding-top: 30px;
+}
+
+.social__item {
+  padding-left: 6px;
+
+  &--vk {
+    position: relative;
+    width: 48px;
+    height: 48px;
+
+    &::after {
+      content: "";
+      background-image: url("/img/social-vk.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 48px;
+      height: 48px;
+      z-index: 2;
+      position: absolute;
+    }
+  }
+
+  &--telegram {
+    position: relative;
+    width: 48px;
+    height: 48px;
+
+    &::after {
+      content: "";
+      background-image: url("/img/social-tg.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 48px;
+      height: 48px;
+      z-index: 2;
+      position: absolute;
+    }
+  }
+
+  &--youtube {
+    position: relative;
+    width: 48px;
+    height: 48px;
+
+    &::after {
+      content: "";
+      background-image: url("/img/social-yt.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 48px;
+      height: 48px;
+      z-index: 2;
+      position: absolute;
+    }
+  }
+}
+
+// TABLET
 @media (min-width: @tablet-width) {
   .main-footer__wrapper {
     display: flex;

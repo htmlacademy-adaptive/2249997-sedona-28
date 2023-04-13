@@ -1,7 +1,3 @@
-.advantages {
-
-}
-
 .advantages__wrapper {
   padding-top: 32px;
 }
@@ -25,7 +21,7 @@
 .advantage__title {
   margin: 0 auto;
   text-align: center;
-  padding-top: 54px;
+  // padding-top: 54px;
 }
 
 .advantage__decoration-numbers {
@@ -45,7 +41,6 @@
 }
 
 .advantage {
-
   &--blue-background {
     background-color: rgba(129, 179, 210, 1);
     color: rgba(255, 255, 255, 1);
@@ -53,20 +48,107 @@
 
   &--gray-background {
     background-color: rgba(238, 238, 238, 1);
+
+    &:first-of-type {
+      margin-top: 24px;
+    }
+
+    &:last-of-type {
+      padding-bottom: 28px;
+    }
   }
-  &--housing h3 {
-    text-align: start;
+
+  &--housing {
+    position: relative;
+
+    & h3 {
+      text-align: start;
+      padding-left: 47px;
+      padding-top: 31px;
+    }
+
+    & p {
+      text-align: start;
+      padding-left: 47px;
+    }
+
+    &::before {
+      content: "";
+      background-image: url("/img/index/icon-house.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 39px;
+      height: 37px;
+      z-index: 2;
+      position: absolute;
+      left: 18px;
+      top: 25px;
+    }
   }
+
   &--meal {
+    position: relative;
+    margin-top: 25px;
 
+    & h3 {
+      text-align: start;
+      padding-left: 47px;
+    }
+
+    & p {
+      text-align: start;
+      padding-left: 47px;
+    }
+
+    &::before {
+      content: "";
+      background-image: url("/img/index/icon-burger.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 40px;
+      height: 35px;
+      z-index: 2;
+      position: absolute;
+      left: 18px;
+    }
   }
-  &--souvenirs {
 
+  &--souvenirs {
+    position: relative;
+    margin-top: 25px;
+
+    & h3 {
+      text-align: start;
+      padding-left: 47px;
+    }
+
+    & p {
+      text-align: start;
+      padding-left: 47px;
+      padding-bottom: 46px;
+    }
+
+    &::before {
+      content: "";
+      background-image: url("/img/index/icon-gift.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 32px;
+      height: 38px;
+      z-index: 2;
+      position: absolute;
+      left: 18px;
+    }
   }
 }
 
 .advantage__title--blue-background {
   color: rgba(255, 255, 255, 1);
+  padding-top: 37px;
+}
+
+.advantage__title--gray-background {
+  padding-top: 24px;
 }
 
 .hotel-search__title {
@@ -75,7 +157,16 @@
 }
 
 .hotel-search__wrapper {
+  padding: 0 29px;
   padding-top: 38px;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.hotel-search__link {
+  display: inline-block;
+  padding: 16px;
+  text-decoration: none;
 }
 // TABLET
 @media (min-width: @tablet-width) {
