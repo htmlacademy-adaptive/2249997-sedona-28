@@ -1,25 +1,147 @@
-.form {
-
+.review__title {
+  text-align: center;
+  margin: 0;
 }
 
-.form__review {
-
+.review__description {
+  text-align: center;
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 28px;
 }
 
-.review {
+.form__field-title {
+  padding-left: 16px;
+}
 
+.form__input {
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+  padding: 16px;
+  margin-bottom: 16px;
+  width: 85%;
+
+  &--opacity {
+    padding: 16px;
+    border: none;
+    background-color: rgba(242, 242, 242, 1);
+  }
 }
 
 .review__wrapper {
   padding-top: 36px;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
-.modal {
-
+.review__form fieldset {
+  border: none;
+  // border-top: 1px solid rgba(229, 229, 229, 1);
+  margin: 0;
+  padding: 0;
 }
 
-.modal__wrapper {
+.fieldset-wrapper {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid rgba(229, 229, 229, 1);
+}
 
+.fieldset__title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.text-review {
+  textarea {
+    width: 89%;
+  }
+}
+
+.form__submit {
+  margin: 0 auto;
+  padding: 16px 34px;
+  border: none;
+  margin-top: 56px;
+}
+
+.form__notice-text {
+  margin: 0;
+  text-align: end;
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.form__grade-list {
+  .control-mark {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    margin-top: 16px;
+  }
+
+  .control-label {
+    padding-left: 16px;
+    vertical-align: top;
+    position: relative;
+    top: 26px;
+    cursor: pointer;
+
+    &:hover {
+      color: rgba(129, 179, 210, 1);
+    }
+  }
+}
+
+.control-input[type="radio"]:checked + .control-mark::after {
+  content: "";
+  height: 16px;
+  width: 16px;
+  background-color: rgba(51, 51, 51, 1);
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.form__visited-places-list {
+  .control-mark {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    background-color: rgba(242, 242, 242, 1);
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 16px;
+  }
+
+  .control-label {
+    padding-left: 16px;
+    vertical-align: top;
+    position: relative;
+    top: 26px;
+    cursor: pointer;
+
+    &:hover {
+      color: rgba(129, 179, 210, 1);
+    }
+  }
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  content: "";
+  height: 16px;
+  width: 22px;
+  background-image: url("/img/catalog/form-v-icon.svg");
+  z-index: 2;
+  position: absolute;
+  top: 15px;
+  left: 12px;
 }
 
 .form__sent-message {
@@ -50,6 +172,7 @@
     grid-column: 1/3;
   }
 }
+
 @media (min-width: @desktop-width) {
   .form {
     display: grid;
