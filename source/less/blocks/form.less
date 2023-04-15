@@ -69,6 +69,7 @@
   margin: 0;
   text-align: end;
   color: rgba(51, 51, 51, 0.6);
+  padding-top: 2px;
 }
 
 .title-phone {
@@ -192,6 +193,7 @@
   display: none;
 }
 
+// TABLET
 @media (min-width: @tablet-width) {
   .review__wrapper {
     padding-top: 64px;
@@ -213,37 +215,130 @@
   .fieldset-wrapper {
     border: none;
     padding: 0;
-    padding-left: 26px;
 
-    &:first-of-type {
+
+    &.wrapper-name {
       border-right: 1px solid rgba(229, 229, 229, 1);
       padding-right: 43px;
+    }
+
+    &.wrapper-tel-mail {
+      padding-left: 43px;
+
+      .fieldset__title {
+        position: relative;
+        right: 30px;
+      }
     }
   }
 
   .fieldset__title {
-    // text-align: left;
     padding-bottom: 20px;
   }
 
   .form {
     display: grid;
-    grid-template-columns: repeat(2, 324px);
+    grid-template-columns: repeat(2, 1fr);
   }
+
+  .wrapper-name {
+    grid-column: 1/2;
+  }
+
+  .wrapper-tel-mail {
+    grid-column: 2/3;
+  }
+
   // Радиокнопки отвечающие за общее впечатление
-  .radio {
+  .wrapper-radio {
     grid-column: 1/3;
+    padding-top: 48px;
+
+    .radio {
+      border-top: 1px solid rgba(219, 219, 219, 1);
+
+      .fieldset__title {
+        padding-left: 65px;
+        padding-right: 65px;
+        position: relative;
+        top: 10px;
+      }
+
+      .form__grade-list {
+        display: flex;
+        flex-wrap: wrap;
+
+        .form__grade-item {
+          padding-right: 49px;
+        }
+      }
+    }
   }
   // Чекбоксы отвечающие за посещенные достопримечательности
-  .checkbox {
+  .wrapper-checkbox {
     grid-column: 1/3;
+    padding-top: 48px;
+
+    .checkbox {
+      border-top: 1px solid rgba(219, 219, 219, 1);
+
+      .fieldset__title {
+        padding-left: 65px;
+        padding-right: 65px;
+        position: relative;
+        top: 10px;
+      }
+
+      .form__visited-places-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .form__visited-places-item {
+          padding-right: 49px;
+          width: 224px;
+        }
+      }
+    }
+  }
+
+  .wrapper-textarea {
+    grid-column: 1/3;
+    padding-top: 42px;
+    padding-bottom: 58px;
   }
 
   .text-review {
-    grid-column: 1/3;
+    border-top: 1px solid rgba(219, 219, 219, 1);
+
+    .fieldset__title {
+      padding-left: 65px;
+      padding-right: 65px;
+      position: relative;
+      top: 10px;
+    }
+
+    textarea {
+      width: 95%;
+      margin-top: 28px;
+    }
+
+    .form__submit {
+      padding: 16px 71px;
+      margin-top: 48px;
+      background-color: rgba(129, 179, 210, 1);
+      font-size: 21px;
+    }
+
+    .form__notice-text {
+      color: rgba(51, 51, 51, 1);
+      position: relative;
+      top: -30px;
+    }
   }
 }
 
+// DESKTOP
 @media (min-width: @desktop-width) {
   .form {
     display: grid;
