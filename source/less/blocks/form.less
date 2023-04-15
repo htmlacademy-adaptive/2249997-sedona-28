@@ -183,16 +183,6 @@
   left: 12px;
 }
 
-.form__sent-message {
-  margin: auto;
-  display: none;
-}
-
-.form__error-message {
-  margin: auto;
-  display: none;
-}
-
 // TABLET
 @media (min-width: @tablet-width) {
   .review__wrapper {
@@ -268,6 +258,7 @@
   .form__grade-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .form__grade-item {
@@ -356,6 +347,14 @@
   .form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form__name {
+    .form__field-title {
+      &:first-of-type {
+        white-space: pre-line;
+      }
+    }
   }
 
   .wrapper-tel-mail {
