@@ -63,6 +63,8 @@
   padding: 16px 34px;
   border: none;
   margin-top: 56px;
+  z-index: 2;
+  position: relative;
 }
 
 .form__notice-text {
@@ -108,6 +110,10 @@
     top: 20px;
     right: 0;
   }
+}
+
+.control-input:focus ~ .control-mark {
+  outline: solid 3px hsl(204, 48%, 67%);
 }
 
 .form__grade-list {
