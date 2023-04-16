@@ -30,6 +30,16 @@
   padding: 0;
 }
 
+// ОКНО УСПЕШНОЙ ОТПРАВКИ ФОРМЫ
+.form__sent-message {
+  display: none;
+}
+
+// ОКНО ОШИБКИ
+.form__error-message {
+  display: none;
+}
+
 // МОДАЛЬНЫЕ ОКНА
 .modal {
   text-align: center;
@@ -43,7 +53,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0.3;
     z-index: 10;
   }
 }
@@ -52,7 +62,7 @@
   background-color: rgba(255, 255, 255, 1);
   width: 100%;
   position: fixed;
-  top: 50%;
+  top: 25%;
   z-index: 11;
 }
 
@@ -80,16 +90,16 @@
   border: none;
 }
 
-.button-wrapper {
-  background-color: rgba(242, 242, 242, 1);
+.succses {
+  .button-wrapper {
+    background-color: rgba(242, 242, 242, 1);
+  }
 }
-// ОКНО УСПЕШНОЙ ОТПРАВКИ ФОРМЫ
-.form__sent-message {
-  // display: none;
-}
-// ОКНО ОШИБКИ
-.form__error-message {
-  display: none;
+
+.error {
+  .modal__button {
+    margin-top: 0;
+  }
 }
 
 // TABLET
@@ -97,11 +107,26 @@
   .modal__wrapper {
     width: 640px;
     height: 347px;
-    left: 10%;
-    padding-left: 97px;
-    padding-right: 99px;
+    position: fixed;
+    left: 64px;
+    right: 64px;
+    z-index: 10;
+    padding-left: 98px;
+    padding-right: 98px;
     box-sizing: border-box;
+    // display: block;
+    // margin: 0 auto;
+    // display: flex;
+    // width: 100%;
+    // height: 100%;
   }
+
+  // .modal_window {
+  //   display: block;
+  //   width: 640px;
+  //   position: relative;
+  //   margin: auto;
+  // }
 
   .modal__title {
     font-size: 30px;
@@ -111,25 +136,57 @@
   .modal__text {
     padding: 0;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
 
   .modal__button {
     font-size: 18px;
     padding-top: 18px;
     padding-bottom: 14px;
-    padding-left: 60px;
-    padding-right: 60px;
-    margin: 20px;
+    margin: 44px 91px;
     border: none;
     background-color: rgba(129, 179, 210, 1);
+    text-align: center;
   }
 
-  // .button-wrapper {
-  //   width: 640px;
-  //   height: 146px;
-  //   position: relative;
-  //   left: -97px;
-  //   box-sizing: border-box;
-  // }
+  .button-wrapper {
+    width: 640px;
+    height: 146px;
+    position: relative;
+    left: -97px;
+  }
+
+  .error {
+    .modal__wrapper {
+      width: 400px;
+      padding-left: 46px;
+      padding-right: 46px;
+      left: 184px;
+      right: 184px;
+    }
+
+    .button-wrapper {
+      width: 0;
+      left: 15px;
+    }
+
+    .modal__button {
+      width: 272px;
+      margin: 0;
+    }
+  }
+}
+// DESKTOP
+@media (min-width: @desktop-width) {
+  .modal__wrapper {
+    left: 320px;
+    right: 320px;
+  }
+
+  .error {
+    .modal__wrapper {
+      left: 400px;
+      right: 400px;
+    }
+  }
 }
