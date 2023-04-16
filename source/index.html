@@ -8,16 +8,16 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <div class="logo-wrapper">
             <a class="main-header__logo">
               <img src="./img/page-logo.svg" width="185" height="96" alt="Логотип Седона" class="logo__image">
             </a>
           </div>
-          <button class="main-nav__toggle-open" type="button"><span class="visually-hidden">Открыть меню</span>
+          <button class="main-nav__toggle main-nav__toggle-open" type="button"><span class="visually-hidden">Открыть меню</span>
           </button>
-          <!-- <button class="main-nav__toggle-closed" type="button"><span class="visually-hidden">Закрыть меню</span>
+          <!-- <button class="main-nav__toggle main-nav__toggle-closed" type="button"><span class="visually-hidden">Закрыть меню</span>
           </button> -->
           <ul class="main-nav__list list-left site-list">
             <li class="site-list__item site-list__item--active">
@@ -201,5 +201,6 @@
         </div>
       </div>
     </footer>
+    <script src="/js/burger-menu.js"></script>
   </body>
 </html>
