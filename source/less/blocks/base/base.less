@@ -7,6 +7,21 @@ body {
   align-items: center;
   color: #333333;
   text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 // Фон для всей страницы
 .page__body {
@@ -29,12 +44,22 @@ img {
 // Свойства для кнопок
 .button {
   color: #ffffff;
+  font-family: "PT Sans", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   align-items: center;
   text-transform: uppercase;
   background-color: rgba(129, 179, 210, 1);
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 // Свойство для полей ввода формы
 .control-label {

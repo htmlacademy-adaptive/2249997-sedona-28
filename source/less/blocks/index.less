@@ -1,23 +1,157 @@
-.advantages {
-
-}
-
 .advantages__wrapper {
   padding-top: 32px;
+}
+
+.advantage__wrapper {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.advantages__title {
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.advantages__reasons {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 55px;
+}
+
+.advantage__title {
+  margin: 0 auto;
+  text-align: center;
+  // padding-top: 54px;
+}
+
+.advantage__decoration-numbers {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 11px;
+}
+
+.advantage__description {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 17px;
 }
 
 .advantage {
   &--blue-background {
     background-color: rgba(129, 179, 210, 1);
     color: rgba(255, 255, 255, 1);
+
+    .advantage__description--blue-background {
+      padding-bottom: 45px;
+    }
   }
+
   &--gray-background {
     background-color: rgba(238, 238, 238, 1);
+
+    &:first-of-type {
+      margin-top: 24px;
+    }
+
+    &:last-of-type {
+      padding-bottom: 28px;
+    }
+  }
+
+  &--housing {
+    position: relative;
+
+    & h3 {
+      padding-top: 31px;
+      padding-left: 47px;
+      text-align: start;
+    }
+
+    & p {
+      padding-left: 47px;
+      text-align: start;
+    }
+
+    &::before {
+      content: "";
+      background-image: url("/img/index/icon-house.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 39px;
+      height: 37px;
+      z-index: 2;
+      position: absolute;
+      left: 18px;
+      top: 25px;
+    }
+  }
+
+  &--meal {
+    position: relative;
+    padding-top: 25px;
+
+    & h3 {
+      padding-left: 47px;
+      text-align: start;
+    }
+
+    & p {
+      padding-left: 47px;
+      text-align: start;
+    }
+
+    &::before {
+      content: "";
+      background-image: url("/img/index/icon-burger.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 40px;
+      height: 35px;
+      z-index: 2;
+      position: absolute;
+      left: 18px;
+    }
+  }
+
+  &--souvenirs {
+    position: relative;
+    padding-top: 25px;
+
+    & h3 {
+      padding-left: 47px;
+      text-align: start;
+    }
+
+    & p {
+      padding-left: 47px;
+      padding-bottom: 46px;
+      text-align: start;
+    }
+
+    &::before {
+      content: "";
+      background-image: url("/img/index/icon-gift.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 32px;
+      height: 38px;
+      z-index: 2;
+      position: absolute;
+      left: 18px;
+    }
   }
 }
 
 .advantage__title--blue-background {
   color: rgba(255, 255, 255, 1);
+  padding-top: 47px;
+}
+
+.advantage__title--gray-background {
+  padding-top: 24px;
 }
 
 .hotel-search__title {
@@ -26,13 +160,23 @@
 }
 
 .hotel-search__wrapper {
+  padding: 0 9%;
   padding-top: 38px;
+  text-align: center;
+  padding-bottom: 32px;
 }
 
+.hotel-search__link {
+  display: inline-block;
+  padding: 16px;
+  text-decoration: none;
+  background-color: rgba(129, 179, 210, 1);
+}
+// TABLET
 @media (min-width: @tablet-width) {
   .advantages__list {
     display: grid;
-    grid-template-columns: repeat(3, 256px);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .advantage--blue-background {
@@ -43,11 +187,123 @@
   .devil-brigde {
     order: -1;
   }
+
+  .advantage__wrapper {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+
+  .advantage {
+    &--housing {
+      & h3 {
+        text-align: center;
+        padding-left: 0;
+        padding-top: 157px;
+      }
+
+      & p {
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 61px;
+      }
+
+      &::before {
+        content: "";
+        background-image: url("/img/index/icon-house.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 77px;
+        height: 72px;
+        z-index: 2;
+        position: absolute;
+        left: 35%;
+        top: 60px;
+      }
+    }
+
+    &--meal {
+      margin-top: 0;
+
+      & h3 {
+        text-align: center;
+        padding-left: 0;
+        padding-top: 157px;
+      }
+
+      & p {
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 61px;
+      }
+
+      &::before {
+        content: "";
+        background-image: url("/img/index/icon-burger.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 77px;
+        height: 72px;
+        z-index: 2;
+        position: absolute;
+        left: 35%;
+        top: 60px;
+      }
+    }
+
+    &--souvenirs {
+      padding-top: 0;
+
+      & h3 {
+        text-align: center;
+        padding-left: 0;
+        padding-top: 157px;
+      }
+
+      & p {
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 61px;
+      }
+
+      &::before {
+        content: "";
+        background-image: url("/img/index/icon-gift.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 67px;
+        height: 80px;
+        z-index: 2;
+        position: absolute;
+        left: 38%;
+        top: 60px;
+      }
+    }
+  }
+
+  .hotel-search__wrapper {
+    padding: 0 21%;
+    padding-top: 60px;
+    padding-bottom: 55px;
+  }
+
+  .hotel-search__link {
+    font-size: 21px;
+    padding: 16px 122px;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: rgba(129, 179, 210, 1);
+    margin-top: 43px;
+  }
+
+  .hotel-search__text {
+    margin: 0;
+  }
 }
+// DESKTOP
 @media (min-width: @desktop-width) {
   .advantages__list {
     display: grid;
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .advantage--blue-background {
@@ -57,5 +313,52 @@
 
   .devil-brigde {
     order: -1;
+  }
+
+  .advantage {
+    &--housing {
+      &::before {
+        content: "";
+        background-image: url("/img/index/icon-house.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 77px;
+        height: 72px;
+        z-index: 2;
+        position: absolute;
+        left: 40%;
+        top: 60px;
+      }
+    }
+
+    &--meal {
+      &::before {
+        content: "";
+        background-image: url("/img/index/icon-burger.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 77px;
+        height: 72px;
+        z-index: 2;
+        position: absolute;
+        left: 40%;
+        top: 60px;
+      }
+    }
+
+    &--souvenirs {
+      &::before {
+        content: "";
+        background-image: url("/img/index/icon-gift.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 67px;
+        height: 80px;
+        z-index: 2;
+        position: absolute;
+        left: 42%;
+        top: 60px;
+      }
+    }
   }
 }
