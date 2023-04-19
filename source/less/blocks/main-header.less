@@ -134,19 +134,27 @@
 
 // Tablet
 @media (min-width: @tablet-width) {
-  .main-nav__wrapper {
-    display: flex;
-    justify-content: space-between;
+  .main-nav__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-flow: dense;
+    text-align: center;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      grid-column: 3/4;
+      grid-row: 1/5;
+    }
   }
 
-  .main-nav__list {
-    top: 0;
+  .site-list__item {
+    text-align: center;
   }
-  //  Ширина элементов
+
   .site-list__link {
     color: rgba(0, 0, 0, 1);
     text-decoration: none;
-    width: 153px;
     vertical-align: middle;
     padding-top: 18px;
     padding-bottom: 17px;
@@ -187,34 +195,9 @@
   .main-nav__toggle-closed {
     display: none;
   }
-
-  .logo-wrapper {
-    order: 2;
-  }
-
-  .list-left {
-    order: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .list-right {
-    order: 3;
-    display: flex;
-    justify-content: space-between;
-  }
 }
 // Desktop
 @media (min-width: @desktop-width) {
-  .main-nav__wrapper {
-    display: flex;
-    justify-content: space-around;
-  }
-  //  Ширина элементов
-  .site-list__item {
-    width: 240px;
-  }
-
   .site-list__link {
     color: rgba(0, 0, 0, 1);
     text-decoration: none;

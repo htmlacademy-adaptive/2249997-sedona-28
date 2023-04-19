@@ -3,8 +3,8 @@
 }
 
 .advantage__wrapper {
-  padding-left: 18px;
-  padding-right: 18px;
+  margin-left: 18px;
+  margin-right: 18px;
 }
 
 .advantages__title {
@@ -51,6 +51,13 @@
 
   &--gray-background {
     background-color: rgba(238, 238, 238, 1);
+    // padding-bottom: 24px;
+    // border-bottom: 1px solid rgba(214, 214, 214, 1);
+
+    .advantage__wrapper {
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(214, 214, 214, 1);
+    }
 
     &:first-of-type {
       margin-top: 24px;
@@ -58,8 +65,18 @@
 
     &:last-of-type {
       padding-bottom: 28px;
+      // Почему это считаеться за тройную вложенность???
+      .advantage__wrapper {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
     }
   }
+
+  // .advantage--gray-background:last-of-type .advantage__wrapper {
+  //   padding-bottom: 0;
+  //   border-bottom: 1px solid rgb(219, 21, 21);
+  // }
 
   &--housing {
     position: relative;
@@ -174,6 +191,11 @@
 }
 // TABLET
 @media (min-width: @tablet-width) {
+  .advantage--gray-background .advantage__wrapper {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
   .advantages__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
