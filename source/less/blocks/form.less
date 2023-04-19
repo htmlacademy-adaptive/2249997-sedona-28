@@ -41,15 +41,32 @@
   padding: 0;
 }
 
+.fieldset__title {
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+  // ПРИ ИСПОЛЬЗОВАНИИ ЦЕЛЬНОЙ ЛИНИИ ВЕРСТКА ПЕРЕСТАЕТ БЫТЬ ГИБКОЙ
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   height: 1px;
+  //   background-color: rgba(229, 229, 229, 1);
+  //   width: 125vw;
+  //   top: -24px;
+  //   left: -45%;
+  // }
+}
+
 .fieldset-wrapper {
   padding-top: 24px;
   padding-bottom: 24px;
   border-top: 1px solid rgba(229, 229, 229, 1);
-}
-
-.fieldset__title {
-  text-align: center;
-  padding-bottom: 20px;
+  // ПРИ ИСПОЛЬЗОВАНИИ ЦЕЛЬНОЙ ЛИНИИ ВЕРСТКА ПЕРЕСТАЕТ БЫТЬ ГИБКОЙ
+  // &:first-of-type {
+  //   .fieldset__title::before {
+  //     width: 100vw;
+  //   }
+  // }
 }
 
 .text-review {
@@ -228,6 +245,10 @@
 
   .fieldset__title {
     padding-bottom: 20px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .form {
@@ -305,7 +326,7 @@
     padding-bottom: 58px;
   }
 
-  .text-review {
+  .fieldset-wrapper .text-review {
     border-top: 1px solid rgba(219, 219, 219, 1);
 
     .fieldset__title {
