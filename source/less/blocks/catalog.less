@@ -23,15 +23,23 @@
 .gallery__description {
   text-align: center;
   padding-bottom: 25px;
+  margin: 0;
 }
 
 .gallery__item {
+  position: relative;
   padding-top: 24px;
   padding-bottom: 25px;
-  border-top: 1px solid rgba(229, 229, 229, 1);
+  // border-top: 1px solid rgba(229, 229, 229, 1);
 
-  &:last-of-type {
-    border-bottom: 1px solid rgba(229, 229, 229, 1);
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: rgba(229, 229, 229, 1);
+    width: 100vw;
+    left: -6%;
+    top: 0;
   }
 }
 
@@ -52,7 +60,18 @@
 }
 
 .video__title {
+  position: relative;
   text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: rgba(229, 229, 229, 1);
+    width: 100vw;
+    left: -6%;
+    top: -17px;
+  }
 }
 
 .video__description {
@@ -98,6 +117,10 @@
     border: none;
     background-color: rgba(242, 242, 242, 1);
     position: relative;
+
+    &::before {
+      display: none;
+    }
   }
 
   .gallery__item:first-of-type {
@@ -128,6 +151,10 @@
 
   .video__title {
     margin: 0;
+
+    &::before {
+      display: none;
+    }
   }
 
   .video__description {
