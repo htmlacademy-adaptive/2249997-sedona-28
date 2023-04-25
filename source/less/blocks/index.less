@@ -3,8 +3,8 @@
 }
 
 .advantage__wrapper {
-  padding-left: 18px;
-  padding-right: 18px;
+  margin-left: 18px;
+  margin-right: 18px;
 }
 
 .advantages__title {
@@ -12,6 +12,10 @@
   text-align: center;
   padding-left: 18px;
   padding-right: 18px;
+  min-width: 284px;
+  box-sizing: border-box;
+  font-size: 17px;
+  max-width: 520px;
 }
 
 .advantages__reasons {
@@ -39,6 +43,18 @@
   padding-top: 17px;
 }
 
+.advantage__image {
+  display: block;
+}
+
+.advantage__br--tablet-width {
+  display: none;
+}
+
+.advantage__description--blue-background {
+  font-size: 13px;
+}
+
 .advantage {
   &--blue-background {
     background-color: rgba(129, 179, 210, 1);
@@ -51,6 +67,13 @@
 
   &--gray-background {
     background-color: rgba(238, 238, 238, 1);
+    // padding-bottom: 24px;
+    // border-bottom: 1px solid rgba(214, 214, 214, 1);
+
+    .advantage__wrapper {
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(214, 214, 214, 1);
+    }
 
     &:first-of-type {
       margin-top: 24px;
@@ -58,8 +81,18 @@
 
     &:last-of-type {
       padding-bottom: 28px;
+      // Почему это считаеться за тройную вложенность???
+      .advantage__wrapper {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
     }
   }
+
+  // .advantage--gray-background:last-of-type .advantage__wrapper {
+  //   padding-bottom: 0;
+  //   border-bottom: 1px solid rgb(219, 21, 21);
+  // }
 
   &--housing {
     position: relative;
@@ -91,7 +124,6 @@
 
   &--meal {
     position: relative;
-    padding-top: 25px;
 
     & h3 {
       padding-left: 47px;
@@ -174,9 +206,26 @@
 }
 // TABLET
 @media (min-width: @tablet-width) {
+  .advantage--gray-background .advantage__wrapper {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .advantage__br--tablet-width {
+    display: block;
+  }
+
+  .advantage__br--desktop-width {
+    display: none;
+  }
+
   .advantages__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .advantage__description--blue-background {
+    font-size: 14px;
   }
 
   .advantage--blue-background {
@@ -191,6 +240,8 @@
   .advantage__wrapper {
     padding-left: 33px;
     padding-right: 33px;
+    max-width: 256px;
+    box-sizing: border-box;
   }
 
   .advantage {
@@ -218,6 +269,7 @@
         position: absolute;
         left: 35%;
         top: 60px;
+        // background-position: 100%;
       }
     }
 
@@ -304,6 +356,10 @@
   .advantages__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .advantage__wrapper {
+    max-width: 400px;
   }
 
   .advantage--blue-background {

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная страница: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -19,15 +20,13 @@
           </button>
           <!-- <button class="main-nav__toggle main-nav__toggle-closed" type="button"><span class="visually-hidden">Закрыть меню</span>
           </button> -->
-          <ul class="main-nav__list list-left site-list">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a href="#" class="site-list__link site-list__link--active title button">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html" class="site-list__link title button">Фото и видео</a>
             </li>
-          </ul>
-          <ul class="main-nav__list list-right site-list">
             <li class="site-list__item">
               <a href="form.html" class="site-list__link title button">Форма Отзыва</a>
             </li>
@@ -48,17 +47,21 @@
       </section>
       <section class="advantages">
         <div class="advantages__wrapper">
-          <h2 class="advantages__title title advantage-title">СЕДОНА — небольшой <br> городок в Аризоне, заслуживающий большего!</h2>
+          <h2 class="advantages__title title advantage-title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="advantages__reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           <ul class="advantages__list site-list">
             <li class="advantages__item advantage advantage--blue-background">
               <div class="advantage__wrapper">
-                <h3 class="advantage__title title advantage__title--blue-background">НАСТОЯЩИЙ ГОРОДОК</h3>
+                <h3 class="advantage__title title advantage__title--blue-background">НАСТОЯЩИЙ <br class="advantage__br--tablet-width">ГОРОДОК</h3>
                 <p class="advantage__decoration-numbers advantage__decoration-numbers--blue-background">— №1 —</p>
-                <p class="advantage__description advantage__description--blue-background">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                <p class="advantage__description advantage__description--blue-background">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, <br class="advantage__br--desktop-width">ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
               </div>
               <div class="advantage__image-wrapper">
-                <img class="advantage__image" src="./img/index/advantages-city.jpg" alt="Фото города Седона" width="320" height="260">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="/img/index/index-photo-city-desktop@1x.jpg 1x, /img/index/index-photo-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="/img/index/index-photo-city-tablet@1x.jpg 1x, /img/index/index-photo-city-tablet@2x.jpg 2x">
+                  <img class="advantage__image" src="/img/index/index-photo-city-mobile@1x.jpg" alt="Фото города Седона" width="320" height="260" srcset="/img/index/index-photo-city-mobile@1x.jpg 2x">
+                </picture>
               </div>
             </li>
             <li class="advantages__item advantage advantage--housing">
@@ -86,7 +89,11 @@
                 <p class="advantage__description advantage__description--blue-background">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="advantage__image-wrapper devil-brigde">
-                <img class="advantage__image" src="./img/index/advantages-mountains.jpg" alt="Фото моста дьявола" width="320" height="260">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="/img/index/index-photo-bridge-desktop@1x.jpg 1x, /img/index/index-photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="/img/index/index-photo-bridge-tablet@1x.jpg 1x, /img/index/index-photo-bridge-tablet@2x.jpg 2x">
+                  <img class="advantage__image" src="/img/index/index-photo-bridge-mobile@1x.jpg" alt="Фото города Седона" width="320" height="260" srcset="/img/index/index-photo-bridge-mobile@2x.jpg 2x">
+                </picture>
               </div>
             </li>
             <li class="advantages__item advantage advantage--gray-background">
@@ -124,7 +131,11 @@
       <section class="map">
         <div class="map__wrapper">
           <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d312446.62643137673!2d-111.83731563102639!3d34.99451938146649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1681381159058!5m2!1sru!2s" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-          <img  class="hotel-search__map" src="./img/index/booking-map.jpg" width="320" height="350" alt="Карты Аризоны">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/index/index-map-desktop@1x.jpg 1x, /img/index/index-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="/img/index/index-map-tablet@1x.jpg 1x, /img/index/index-map-tablet@2x.jpg 2x">
+            <img class="advantage__image" src="/img/index/index-map-mobile@1x.jpg" alt="Фото города Седона" width="320" height="350" srcset="/img/index/index-map-mobile@2x.jpg 2x">
+          </picture>
         </div>
       </section>
       <section class="form__error-message error modal">
