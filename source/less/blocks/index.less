@@ -2,6 +2,23 @@
   padding-top: 32px;
 }
 
+.map {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("/img/index/index-map-marker.svg");
+    background-size: cover;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+    // top: 50px;
+  }
+}
+
 .advantage__wrapper {
   margin-left: 18px;
   margin-right: 18px;
