@@ -86,6 +86,27 @@
 .gallery__video {
   display: block;
   margin: 0 auto;
+  // position: relative;
+
+
+}
+
+.video {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("/img/catalog/catalog-play-icon.svg");
+    background-size: cover;
+    width: 48px;
+    height: 54px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+    // top: 50px;
+    cursor: pointer;
+  }
 }
 
 .gallery__list {
