@@ -87,13 +87,35 @@
   }
 }
 
-.social__link {
-  &:hover .social__image {
-    rect {
-      fill: rgba(102, 158, 192, 1);
-    }
-  }
-}
+// .social__link {
+//   &:hover .social__image {
+//     rect {
+//       fill: rgba(102, 158, 192, 1);
+//     }
+//   }
+// }
+// СПРАЙТ ЧЕРЕЗ МАСКУ
+// .social__item--vk .social__link {
+//   position: relative;
+//   display: block;
+//   padding: 0;
+//   margin: 0;
+
+//   &::after {
+//     content: "";
+//     mask-image: url("/img/social-vk.svg");
+//     background-color: blue;
+//     object-fit: cover;
+//     width: 48px;
+//     height: 48px;
+//     position: absolute;
+//   }
+// }
+
+// .social__item--vk .social__link:hover::after {
+//   background-color:aqua;
+// }
+
 // TABLET
 @media (min-width: @tablet-width) {
   .main-footer__wrapper {
