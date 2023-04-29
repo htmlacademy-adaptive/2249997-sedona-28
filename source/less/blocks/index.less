@@ -2,6 +2,27 @@
   padding-top: 32px;
 }
 
+.br-for-tablet-desktop {
+  display: none;
+}
+
+.advantage--with-icon {
+  .advantage__description {
+    padding-bottom: 25px;
+    padding-left: 47px;
+    text-align: start;
+  }
+
+  .advantage__title {
+    padding-left: 47px;
+    text-align: start;
+  }
+}
+
+.br-for-desktop {
+  display: none;
+}
+
 .map {
   position: relative;
 
@@ -116,13 +137,6 @@
 
     & h3 {
       padding-top: 31px;
-      padding-left: 47px;
-      text-align: start;
-    }
-
-    & p {
-      padding-left: 47px;
-      text-align: start;
     }
 
     &::before {
@@ -142,16 +156,6 @@
   &--meal {
     position: relative;
 
-    & h3 {
-      padding-left: 47px;
-      text-align: start;
-    }
-
-    & p {
-      padding-left: 47px;
-      text-align: start;
-    }
-
     &::before {
       content: "";
       background-image: url("/img/index/icon-burger.svg");
@@ -162,22 +166,16 @@
       z-index: 2;
       position: absolute;
       left: 18px;
+      top: -8px;
     }
   }
 
   &--souvenirs {
     position: relative;
-    padding-top: 25px;
+    // padding-top: 25px;
 
-    & h3 {
-      padding-left: 47px;
-      text-align: start;
-    }
-
-    & p {
-      padding-left: 47px;
+    & .advantage__description {
       padding-bottom: 46px;
-      text-align: start;
     }
 
     &::before {
@@ -190,6 +188,7 @@
       z-index: 2;
       position: absolute;
       left: 18px;
+      top: -10px;
     }
   }
 }
@@ -223,6 +222,22 @@
 }
 // TABLET
 @media (min-width: @tablet-width) {
+  .hotel-search__title {
+    font-size: 30px;
+  }
+
+  .advantage--with-icon {
+    .advantage__description {
+      text-align: center;
+      padding-left: 0;
+    }
+
+    .advantage__title {
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+
   .hero__slogan-image {
     width: 461px;
   }
@@ -230,6 +245,10 @@
   .advantage--gray-background .advantage__wrapper {
     padding-bottom: 0;
     border-bottom: none;
+  }
+
+  .br-for-tablet-desktop {
+    display: block;
   }
 
   .advantage__br--tablet-width {
@@ -259,10 +278,12 @@
   }
 
   .advantage__wrapper {
-    padding-left: 33px;
-    padding-right: 33px;
+    padding-left: 28px;
+    padding-right: 28px;
     max-width: 256px;
     box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .advantage {
@@ -354,7 +375,7 @@
   }
 
   .hotel-search__wrapper {
-    padding: 0 21%;
+    // padding: 0 21%;
     padding-top: 60px;
     padding-bottom: 55px;
   }
@@ -381,6 +402,7 @@
 
   .advantage__wrapper {
     max-width: 400px;
+    margin: 0 auto;
   }
 
   .advantage--blue-background {
@@ -390,6 +412,10 @@
 
   .devil-brigde {
     order: -1;
+  }
+
+  .br-for-desktop {
+    display: block;
   }
 
   .advantage {
