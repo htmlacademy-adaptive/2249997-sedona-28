@@ -64,6 +64,10 @@
 // ОКНО УСПЕШНОЙ ОТПРАВКИ ФОРМЫ
 .form__sent-message {
   display: none;
+
+  & .modal__title {
+    font-size: 18px;
+  }
 }
 
 // ОКНО ОШИБКИ
@@ -135,6 +139,12 @@
 
 // TABLET
 @media (min-width: @tablet-width) {
+  .form__sent-message {
+    & .modal__title {
+      font-size: 30px;
+    }
+  }
+
   .hero {
     background-position: 50%;
     height: 518px;
@@ -198,6 +208,8 @@
     font-size: 18px;
     padding-top: 18px;
     padding-bottom: 14px;
+    padding-left: 139px;
+    padding-right: 139px;
     margin: 44px 91px;
     border: none;
     background-color: rgba(129, 179, 210, 1);
