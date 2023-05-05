@@ -5,13 +5,27 @@
 .hero {
   background-color: #cdd0d3;
   background-image: url("/img/hero@1x.jpg");
-  background-image: image("/source/img/hero@1x.jpg#xywh=0,50,350,389");
+  // background-image: image("/source/img/hero@1x.jpg#xywh=0,50,350,389");
   background-size: cover;
+  background-position: 50% 75%;
   background-repeat: no-repeat;
   position: relative;
   height: 389px;
   margin: 0;
   padding: 0;
+
+  &::after {
+    content: "";
+    background-image: url("/img/hero-triangle-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    height: 57px;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+  }
 }
 
 @media (min-resolution: 2dppx) {
@@ -29,22 +43,31 @@
 .hero-for-catalog-form {
   background-color: #cdd0d3;
   background-image: url("/img/hero@1x.jpg");
-  background-image: image("/source/img/hero@1x.jpg#xywh=0,50,350,389");
-  background-size: cover;
+  // background-image: image("/source/img/hero@1x.jpg#xywh=0,50,350,389");
+  background-size: 400%;
+  background-position: 45% 83%;
   background-repeat: no-repeat;
   position: relative;
-  height: 389px;
+  height: 160px;
   margin: 0;
   padding: 0;
 
   @media (min-resolution: 2dppx) {
     background-image: url("/img/hero@2x.jpg");
   }
+
+  .hero__slogan-image {
+    padding-top: 52px;
+  }
 }
 
 // ОКНО УСПЕШНОЙ ОТПРАВКИ ФОРМЫ
 .form__sent-message {
   display: none;
+
+  & .modal__title {
+    font-size: 18px;
+  }
 }
 
 // ОКНО ОШИБКИ
@@ -75,7 +98,7 @@
   width: 100%;
   position: fixed;
   top: 25%;
-  z-index: 11;
+  z-index: 12;
 }
 
 .modal__title {
@@ -116,9 +139,37 @@
 
 // TABLET
 @media (min-width: @tablet-width) {
+  .form__sent-message {
+    & .modal__title {
+      font-size: 30px;
+    }
+  }
+
+  .hero {
+    background-position: 50%;
+    height: 518px;
+  }
+
+  .hero-for-catalog-form {
+    background-color: #cdd0d3;
+    background-image: url("/img/hero@1x.jpg");
+    // background-image: image("/source/img/hero@1x.jpg#xywh=0,50,350,389");
+    background-size: cover;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 293px;
+    margin: 0;
+    padding: 0;
+
+    .hero__slogan-image {
+      padding-top: 95px;
+    }
+  }
+
   .modal__wrapper {
     width: 640px;
-    height: 347px;
+    // height: 347px;
     position: fixed;
     left: 64px;
     right: 64px;
@@ -142,6 +193,7 @@
 
   .modal__title {
     font-size: 30px;
+    line-height: 40px;
     padding-top: 52px;
   }
 
@@ -149,12 +201,15 @@
     padding: 0;
     padding-top: 30px;
     padding-bottom: 60px;
+    font-size: 13px;
   }
 
   .modal__button {
     font-size: 18px;
     padding-top: 18px;
     padding-bottom: 14px;
+    padding-left: 139px;
+    padding-right: 139px;
     margin: 44px 91px;
     border: none;
     background-color: rgba(129, 179, 210, 1);
@@ -163,7 +218,7 @@
 
   .button-wrapper {
     width: 640px;
-    height: 146px;
+    // height: 146px;
     position: relative;
     left: -97px;
   }
@@ -180,20 +235,39 @@
     .button-wrapper {
       width: 0;
       left: 15px;
+      margin: 0;
     }
 
     .modal__button {
       width: 272px;
       margin: 0;
+      margin-bottom: 50px;
     }
-  }
-
-  .hero {
-    // background-image: image("/source/img/hero@1x.jpg#xywh=0,50,320,389");
   }
 }
 // DESKTOP
 @media (min-width: @desktop-width) {
+  .hero-for-catalog-form {
+    background-color: #cdd0d3;
+    background-image: url("/img/hero@1x.jpg");
+    // background-image: image("/source/img/hero@1x.jpg#xywh=0,50,350,389");
+    background-size: cover;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 274px;
+    margin: 0;
+    padding: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/hero@2x.jpg");
+    }
+
+    .hero__slogan-image {
+      padding-top: 101px;
+    }
+  }
+
   .modal__wrapper {
     left: 320px;
     right: 320px;
@@ -204,9 +278,5 @@
       left: 400px;
       right: 400px;
     }
-  }
-
-  .hero {
-    // background-image: image("/source/img/hero@1x.jpg#xywh=0,50,320,389");
   }
 }
