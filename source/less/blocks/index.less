@@ -8,14 +8,16 @@
 
 .advantage--with-icon {
   .advantage__description {
-    padding-bottom: 25px;
+    padding-bottom: 32px;
     padding-left: 47px;
     text-align: start;
+    font-size: 12px;
   }
 
   .advantage__title {
     padding-left: 47px;
     text-align: start;
+    font-size: 16px;
   }
 }
 
@@ -56,15 +58,32 @@
   padding-right: 18px;
   min-width: 284px;
   box-sizing: border-box;
-  font-size: 17px;
+  font-size: 16px;
   max-width: 520px;
 }
 
 .advantages__reasons {
   margin: 0 auto;
   text-align: center;
+  padding: 0 20px;
   padding-top: 35px;
   padding-bottom: 55px;
+  font-size: 13px;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("/img/index/index-mobile-arrow.svg");
+    background-color:rgba(129, 179, 210, 1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 37px;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 }
 
 .advantage__title {
@@ -103,7 +122,7 @@
     color: rgba(255, 255, 255, 1);
 
     .advantage__description--blue-background {
-      padding-bottom: 45px;
+      padding-bottom: 38px;
     }
   }
 
@@ -140,7 +159,7 @@
     position: relative;
 
     & h3 {
-      padding-top: 31px;
+      padding-top: 32px;
     }
 
     &::before {
@@ -179,7 +198,7 @@
     // padding-top: 25px;
 
     & .advantage__description {
-      padding-bottom: 46px;
+      padding-bottom: 44px;
     }
 
     &::before {
@@ -191,15 +210,16 @@
       height: 38px;
       z-index: 2;
       position: absolute;
-      left: 18px;
-      top: -10px;
+      left: 22px;
+      top: -9px;
     }
   }
 }
 
 .advantage__title--blue-background {
   color: rgba(255, 255, 255, 1);
-  padding-top: 47px;
+  padding-top: 33px;
+  font-size: 16px;
 }
 
 .advantage__title--gray-background {
@@ -228,6 +248,12 @@
 @media (min-width: @tablet-width) {
   .hotel-search__title {
     font-size: 30px;
+  }
+
+  .advantages__reasons {
+    &::after {
+      display: none;
+    }
   }
 
   .advantage--with-icon {
