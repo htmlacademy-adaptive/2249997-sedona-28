@@ -73,7 +73,7 @@
   &::after {
     content: "";
     background-image: url("/img/index/index-mobile-arrow.svg");
-    background-color:rgba(129, 179, 210, 1);
+    background-color: rgba(129, 179, 210, 1);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -114,16 +114,13 @@
 
 .advantage__description--blue-background {
   font-size: 13px;
+  padding-bottom: 38px;
 }
 
 .advantage {
   &--blue-background {
     background-color: rgba(129, 179, 210, 1);
     color: rgba(255, 255, 255, 1);
-
-    .advantage__description--blue-background {
-      padding-bottom: 38px;
-    }
   }
 
   &--gray-background {
@@ -263,25 +260,48 @@
     display: none;
   }
 
+  .advantages__title {
+    font-size: 18px;
+  }
+
+  .advantages__wrapper {
+    padding-top: 49px;
+  }
+
   .hotel-search__title {
-    font-size: 30px;
+    font-size: 26px;
+    margin: 0;
+    padding-top: 39px;
+    padding-left: 6px;
+    padding-bottom: 30px;
   }
 
   .advantages__reasons {
+    padding-top: 29px;
+    font-size: 12.5px;
+
     &::after {
       display: none;
     }
+  }
+
+  .advantage__title--blue-background {
+    padding-top: 53px;
+    font-size: 18px;
   }
 
   .advantage--with-icon {
     .advantage__description {
       text-align: center;
       padding-left: 0;
+      font-size: 12.5px;
+      padding-top: 25px;
     }
 
     .advantage__title {
       text-align: center;
       padding-left: 0;
+      font-size: 18px;
     }
   }
 
@@ -312,7 +332,9 @@
   }
 
   .advantage__description--blue-background {
-    font-size: 14px;
+    padding-top: 24px;
+    padding-bottom: 30px;
+    font-size: 13px;
   }
 
   .advantage--blue-background {
@@ -322,6 +344,20 @@
 
   .devil-brigde {
     order: -1;
+  }
+
+  .advantage--devil-bridge .title {
+    padding-top: 53px;
+  }
+
+  .advantage__title--gray-background {
+    padding-top: 42px;
+    font-size: 18px;
+  }
+
+  .advantage--gray-background .advantage__description {
+    font-size: 12px;
+    padding-top: 25px;
   }
 
   .advantage__wrapper {
@@ -397,7 +433,7 @@
       & h3 {
         text-align: center;
         padding-left: 0;
-        padding-top: 157px;
+        padding-top: 153px;
       }
 
       & p {
@@ -418,6 +454,10 @@
         left: 38%;
         top: 60px;
       }
+
+      .advantage__description {
+        padding-bottom: 63px;
+      }
     }
   }
 
@@ -428,12 +468,12 @@
   }
 
   .hotel-search__link {
-    font-size: 21px;
-    padding: 16px 122px;
+    font-size: 19px;
+    padding: 18px 135px;
     text-decoration: none;
     white-space: nowrap;
     background-color: rgba(129, 179, 210, 1);
-    margin-top: 43px;
+    margin-top: 14px;
   }
 
   .hotel-search__text {
