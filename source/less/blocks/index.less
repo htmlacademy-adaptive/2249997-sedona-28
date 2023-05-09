@@ -6,6 +6,10 @@
   display: none;
 }
 
+.br-for-tablet {
+  display: none;
+}
+
 .advantage--with-icon {
   .advantage__description {
     padding-bottom: 32px;
@@ -479,12 +483,24 @@
   .hotel-search__text {
     margin: 0;
   }
+
+  .br-for-tablet {
+    display: block;
+  }
 }
 // DESKTOP
 @media (min-width: @desktop-width) {
   .advantages__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .advantages__wrapper {
+    padding-top: 60px;
+  }
+
+  .advantages__reasons {
+    padding-bottom: 44px;
   }
 
   .advantage__wrapper {
@@ -505,6 +521,10 @@
     display: block;
   }
 
+  .br-for-tablet {
+    display: none;
+  }
+
   .advantage {
     &--housing {
       &::before {
@@ -512,12 +532,16 @@
         background-image: url("/img/index/icon-house.svg");
         background-repeat: no-repeat;
         background-size: cover;
-        width: 77px;
-        height: 72px;
+        width: 80px;
+        height: 75px;
         z-index: 2;
         position: absolute;
         left: 40%;
-        top: 60px;
+        top: 67px;
+      }
+
+      & h3 {
+        padding-top: 169px;
       }
     }
 
@@ -531,8 +555,12 @@
         height: 72px;
         z-index: 2;
         position: absolute;
-        left: 40%;
-        top: 60px;
+        left: 39.5%;
+        top: 70px;
+      }
+
+      & h3 {
+        padding-top: 166px;
       }
     }
 
@@ -541,14 +569,46 @@
         content: "";
         background-image: url("/img/index/icon-gift.svg");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         width: 67px;
         height: 80px;
         z-index: 2;
         position: absolute;
-        left: 42%;
-        top: 60px;
+        left: 41.5%;
+        top: 64px;
+      }
+
+      & h3 {
+        padding-top: 170px;
+      }
+
+      & .advantage__description {
+        padding-bottom: 66px;
       }
     }
+  }
+
+  .advantage__title--gray-background {
+    padding-top: 52px;
+  }
+
+  .advantage__decoration-numbers {
+    padding-top: 13px;
+  }
+
+  .advantage--gray-background:last-of-type {
+    padding-bottom: 51px;
+  }
+
+  .hotel-search__title {
+    padding-top: 6px;
+  }
+
+  .hotel-search__link {
+    margin-top: 12px;
+  }
+
+  .hotel-search__wrapper {
+    padding-bottom: 67px;
   }
 }
