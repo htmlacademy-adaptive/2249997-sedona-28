@@ -37,8 +37,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, 50%);
-    // top: 50px;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -102,6 +101,7 @@
   margin: 0 auto;
   text-align: center;
   padding-top: 17px;
+  font-size: 13px;
 }
 
 .advantage__image {
@@ -222,30 +222,47 @@
   font-size: 16px;
 }
 
+.advantage--devil-bridge .title {
+  padding-top: 37px;
+}
+
 .advantage__title--gray-background {
   padding-top: 24px;
+  font-size: 16px;
 }
 
 .hotel-search__title {
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
+}
+
+.hotel-search__text {
+  font-size: 12.5px;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 31px;
 }
 
 .hotel-search__wrapper {
-  padding: 0 9%;
-  padding-top: 38px;
+  padding: 0 6%;
+  padding-top: 25px;
   text-align: center;
-  padding-bottom: 32px;
+  padding-bottom: 49px;
 }
 
 .hotel-search__link {
   display: inline-block;
-  padding: 16px;
+  padding: 16px 50px;
   text-decoration: none;
   background-color: rgba(129, 179, 210, 1);
+  font-size: 18px;
 }
 // TABLET
 @media (min-width: @tablet-width) {
+  .br-for-mobile {
+    display: none;
+  }
+
   .hotel-search__title {
     font-size: 30px;
   }
