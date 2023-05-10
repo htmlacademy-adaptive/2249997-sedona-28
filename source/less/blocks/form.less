@@ -260,13 +260,17 @@
 // TABLET
 @media (min-width: @tablet-width) {
   .review__wrapper {
-    padding-top: 64px;
+    padding-top: 62px;
     padding-left: 8%;
     padding-right: 8%;
   }
 
+  .fieldset-wrapper::before {
+    display: none;
+  }
+
   .review__title {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .review__description {
@@ -274,7 +278,15 @@
     padding-bottom: 108px;
     padding-left: 12%;
     padding-right: 12%;
-    font-size: 14px;
+    font-size: 12.5px;
+  }
+
+  .title-phone::after {
+    right: -14px;
+  }
+
+  .title-email::after {
+    right: -14px;
   }
 
   .fieldset-wrapper {
@@ -290,7 +302,7 @@
     &.wrapper-tel-mail {
       .fieldset__title {
         position: relative;
-        right: 30px;
+        right: 11px;
       }
     }
   }
@@ -301,8 +313,18 @@
     }
   }
 
+  .form__input:not(.form__input--phone-icon) {
+    padding-right: 42px;
+  }
+
+  .form__tel-mail .form__input--mail-icon {
+    padding-right: 16px;
+  }
+
   .fieldset__title {
-    padding-bottom: 20px;
+    padding-bottom: 27px;
+    font-size: 18px;
+    padding-left: 10px;
 
     &::before {
       display: none;
@@ -319,14 +341,14 @@
   }
 
   .wrapper-tel-mail {
-    padding-left: 43px;
+    padding-left: 30px;
     grid-column: 2/3;
   }
 
   // Радиокнопки отвечающие за общее впечатление
   .wrapper-radio {
     grid-column: 1/3;
-    padding-top: 48px;
+    padding-top: 45px;
 
     .radio {
       border-top: 1px solid rgba(219, 219, 219, 1);
@@ -335,7 +357,7 @@
         padding-left: 65px;
         padding-right: 65px;
         position: relative;
-        top: 10px;
+        top: 3px;
       }
     }
   }
@@ -344,16 +366,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    & .form__grade-item:nth-of-type(3) {
+      padding-top: 0;
+    }
+  }
+
+  .form__grade-list .control-label {
+    padding-left: 10px;
   }
 
   .form__grade-item {
-    padding-right: 48px;
-    padding-top: 28px;
+    padding-right: 17px;
+    padding-top: 12px;
+    padding-left: 37px;
   }
   // Чекбоксы отвечающие за посещенные достопримечательности
   .wrapper-checkbox {
     grid-column: 1/3;
-    padding-top: 48px;
+    padding-top: 43px;
 
     .checkbox {
       border-top: 1px solid rgba(219, 219, 219, 1);
@@ -362,7 +393,8 @@
         padding-left: 65px;
         padding-right: 65px;
         position: relative;
-        top: 10px;
+        top: 3px;
+        font-size: 18px;
       }
     }
   }
@@ -371,17 +403,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 15px;
   }
 
   .form__visited-places-item {
     padding-right: 49px;
-    width: 224px;
+    padding-left: 17px;
+    width: 190px;
   }
 
   .wrapper-textarea {
     grid-column: 1/3;
-    padding-top: 42px;
-    padding-bottom: 58px;
+    padding-top: 25px;
+    padding-bottom: 43px;
   }
 
   .fieldset-wrapper .text-review {
@@ -391,25 +425,29 @@
       padding-left: 65px;
       padding-right: 65px;
       position: relative;
-      top: 10px;
+      top: 16px;
+      font-size: 18.5px;
     }
 
     textarea {
       width: 95%;
-      margin-top: 28px;
+      margin-top: 15px;
+      font-size: 15.5px;
+      padding-bottom: 13px;
     }
 
     .form__submit {
-      padding: 16px 71px;
-      margin-top: 48px;
+      padding: 18px 73px;
+      margin-top: 43px;
       background-color: rgba(129, 179, 210, 1);
-      font-size: 21px;
+      font-size: 17.5px;
     }
 
     .form__notice-text {
       color: rgba(51, 51, 51, 1);
       position: relative;
-      top: -30px;
+      top: -36px;
+      font-size: 12px;
     }
   }
 }
