@@ -63,7 +63,7 @@
 
 // ОКНО УСПЕШНОЙ ОТПРАВКИ ФОРМЫ
 .form__sent-message {
-  // display: none;
+  display: none;
 
   & .modal__title {
     font-size: 15.5px;
@@ -84,7 +84,25 @@
 
 // ОКНО ОШИБКИ
 .form__error-message {
-  display: none;
+  // display: none;
+
+  & .modal__title {
+    font-size: 15.5px;
+    padding-top: 46px;
+  }
+
+  & .modal__text {
+    padding-top: 26px;
+    font-size: 12px;
+    padding-bottom: 27px;
+  }
+
+  & .modal__button {
+    font-size: 16px;
+    padding-left: 75px;
+    padding-right: 75px;
+    margin-bottom: 35px;
+  }
 }
 
 // МОДАЛЬНЫЕ ОКНА
