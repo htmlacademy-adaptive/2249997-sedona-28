@@ -1,6 +1,7 @@
 .review__title {
   text-align: center;
   margin: 0;
+  font-size: 15px;
 }
 
 .review__description {
@@ -13,20 +14,27 @@
 
 .form__field-title {
   padding-left: 16px;
+  font-size: 13px;
 }
 
 .form__input {
   background-color: rgba(242, 242, 242, 1);
   border: none;
   padding: 16px;
+  padding-right: 26px;
   margin-bottom: 16px;
   width: 85%;
+  font-size: 16px;
 
   &--opacity {
     padding: 16px;
     border: none;
     background-color: rgba(242, 242, 242, 1);
   }
+}
+
+.text-review__textarea {
+  padding-bottom: 3px;
 }
 
 .review__wrapper {
@@ -44,8 +52,9 @@
 
 .fieldset__title {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
   position: relative;
+  font-size: 15.5px;
   // ПРИ ИСПОЛЬЗОВАНИИ ЦЕЛЬНОЙ ЛИНИИ ВЕРСТКА ПЕРЕСТАЕТ БЫТЬ ГИБКОЙ
   // &::before {
   //   content: "";
@@ -59,15 +68,48 @@
 }
 
 .fieldset-wrapper {
-  padding-top: 24px;
+  padding-top: 25px;
   padding-bottom: 24px;
-  border-top: 1px solid rgba(229, 229, 229, 1);
+  position: relative;
+  // border-top: 1px solid rgba(229, 229, 229, 1);
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: rgba(229, 229, 229, 1);
+    width: 100vw;
+    left: -6%;
+    top: 0;
+  }
   // ПРИ ИСПОЛЬЗОВАНИИ ЦЕЛЬНОЙ ЛИНИИ ВЕРСТКА ПЕРЕСТАЕТ БЫТЬ ГИБКОЙ
   // &:first-of-type {
   //   .fieldset__title::before {
   //     width: 100vw;
   //   }
   // }
+}
+
+.wrapper-tel-mail {
+  padding-bottom: 20px;
+}
+
+.wrapper-radio {
+  padding-top: 23px;
+
+  .fieldset__title {
+    padding-bottom: 5px;
+  }
+}
+
+.checkbox {
+  .fieldset__title {
+    padding-bottom: 4px;
+  }
+
+  .title {
+    font-size: 15.5px;
+  }
 }
 
 .text-review {
@@ -77,13 +119,18 @@
   }
 }
 
+.wrapper-textarea {
+  padding-bottom: 16px;
+}
+
 .form__submit {
   margin: 0 auto;
-  padding: 16px 34px;
+  padding: 16px 50px;
   border: none;
-  margin-top: 56px;
+  margin-top: 50px;
   z-index: 2;
   position: relative;
+  font-size: 18px;
 }
 
 .form__notice-text {
@@ -91,6 +138,7 @@
   text-align: end;
   color: rgba(51, 51, 51, 0.6);
   padding-top: 2px;
+  font-size: 10.5px;
 }
 
 .title-phone {
@@ -101,14 +149,14 @@
     width: 57px;
     height: 57px;
     background-repeat: no-repeat;
-    background-size: 22px;
+    background-size: 18px;
     background-position: center;
     background-image: url("/img/form/input-phone-icon.svg");
     background-color: rgba(230, 230, 230, 1);
     z-index: 10;
     position: absolute;
-    top: 20px;
-    right: 0;
+    top: 19px;
+    right: -10px;
   }
 }
 
@@ -120,14 +168,14 @@
     width: 57px;
     height: 57px;
     background-repeat: no-repeat;
-    background-size: 22px;
+    background-size: 16px;
     background-position: center;
     background-image: url("/img/form/form-input-mail-icon.svg");
     background-color: rgba(230, 230, 230, 1);
     z-index: 10;
     position: absolute;
-    top: 20px;
-    right: 0;
+    top: 19px;
+    right: -10px;
   }
 }
 
@@ -144,7 +192,7 @@
     border-radius: 50%;
     position: relative;
     cursor: pointer;
-    margin-top: 16px;
+    margin-top: 10px;
   }
 
   .control-label {
@@ -153,6 +201,7 @@
     position: relative;
     top: 26px;
     cursor: pointer;
+    font-size: 15.5px;
 
     &:hover {
       color: rgba(129, 179, 210, 1);
@@ -181,7 +230,7 @@
     position: relative;
     cursor: pointer;
     border-radius: 4px;
-    margin-top: 16px;
+    margin-top: 10px;
   }
 
   .control-label {
