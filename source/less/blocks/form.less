@@ -366,10 +366,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-left: 17px;
+  }
 
-    & .form__grade-item:nth-of-type(3) {
-      padding-top: 0;
-    }
+  .form__grade-item:nth-of-type(3) {
+    padding-top: 0;
   }
 
   .form__grade-list .control-label {
@@ -460,9 +461,13 @@
     padding-right: 10%;
   }
 
+  .fieldset__title {
+    font-size: 18px;
+  }
+
   .review__description {
     padding-top: 31px;
-    padding-bottom: 68px;
+    padding-bottom: 70px;
     padding-left: 24%;
     padding-right: 24%;
   }
@@ -480,12 +485,24 @@
     }
   }
 
+  .fieldset-wrapper.wrapper-tel-mail .fieldset__title {
+    right: 5px;
+  }
+
+  .title-phone::after {
+    right: -32px;
+  }
+
+  .title-email::after {
+    right: -32px;
+  }
+
   .wrapper-tel-mail {
-    padding-left: 64px;
+    padding-left: 51px;
   }
   // Радиокнопки отвечающие за общее впечатление
   .wrapper-radio {
-    padding-top: 56px;
+    padding-top: 52px;
 
     .radio {
       grid-column: 1/3;
@@ -493,22 +510,44 @@
   }
 
   .form__grade-item {
-    padding-top: 45px;
+    padding-right: 32px;
   }
+
+  .form__grade-list .form__grade-item {
+    padding-top: 32px;
+  }
+
+  .wrapper-checkbox {
+    padding-top: 66px;
+  }
+
+  .form__visited-places-list {
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 46px;
+    justify-content: space-around;
+
+    & .form__visited-places-item {
+      padding: 0;
+    }
+  }
+
   // Чекбоксы отвечающие за посещенные достопримечательности
   .checkbox {
     grid-column: 1/3;
   }
 
   .form__visited-places-item {
-    padding-top: 59px;
-    width: fit-content;
+    // padding-left: 10px;
+    // padding-top: 34px;
+    // padding-right: 5px;
+    width: auto;
   }
 
   // Форма для написания развернутого отзыва
   .wrapper-textarea {
-    padding-top: 56px;
-    padding-bottom: 64px;
+    padding-top: 70px;
+    padding-bottom: 41px;
   }
 
   .text-review {
@@ -522,10 +561,19 @@
   }
 
   .form__submit {
-    margin-left: 6%;
+    margin-left: 10%;
   }
 
   .form__notice-text {
     right: 10%;
+  }
+
+  .fieldset-wrapper .text-review textarea {
+    margin-left: 10%;
+    width: 77%;
+  }
+
+  .fieldset-wrapper .text-review .form__submit {
+    padding: 18px 104px;
   }
 }
