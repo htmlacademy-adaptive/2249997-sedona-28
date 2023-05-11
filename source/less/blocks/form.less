@@ -403,8 +403,9 @@
   .form__visited-places-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     padding-top: 15px;
+    padding-left: 65px;
   }
 
   .form__visited-places-item {
@@ -518,7 +519,7 @@
   }
 
   .form__grade-list .form__grade-item {
-    padding-top: 32px;
+    padding-top: 29px;
   }
 
   .wrapper-checkbox {
@@ -526,13 +527,27 @@
   }
 
   .form__visited-places-list {
-    padding-left: 13px;
+    // padding-left: 13px;
+    padding-left: 45px;
     padding-right: 13px;
     padding-top: 46px;
-    justify-content: space-around;
+    // justify-content: space-around;
+    justify-content: flex-start;
 
     & .form__visited-places-item {
       padding: 0;
+      // padding-right: 61px;
+      padding-left: 61px;
+
+      &:last-of-type {
+        padding-right: 0;
+      }
+      &:first-of-type {
+        padding-left: 0;
+      }
+      &:nth-of-type(5n+5) {
+        padding-left: 0;
+      }
     }
   }
 
@@ -545,7 +560,9 @@
     // padding-left: 10px;
     // padding-top: 34px;
     // padding-right: 5px;
-    width: auto;
+
+    // width: auto;
+    width: fit-content;
   }
 
   // Форма для написания развернутого отзыва
