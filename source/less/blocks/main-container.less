@@ -24,7 +24,7 @@
     height: 57px;
     width: 100%;
     z-index: 1;
-    bottom: 0;
+    bottom: -1px;
   }
 }
 
@@ -66,13 +66,43 @@
   display: none;
 
   & .modal__title {
-    font-size: 18px;
+    font-size: 15.5px;
+  }
+
+  & .modal__text {
+    padding-top: 26px;
+    font-size: 12px;
+    padding-bottom: 50px;
+  }
+
+  & .modal__button {
+    font-size: 16px;
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }
 
 // ОКНО ОШИБКИ
 .form__error-message {
   display: none;
+
+  & .modal__title {
+    font-size: 15.5px;
+    padding-top: 46px;
+  }
+
+  & .modal__text {
+    padding-top: 26px;
+    font-size: 12px;
+    padding-bottom: 27px;
+  }
+
+  & .modal__button {
+    font-size: 16px;
+    padding-left: 75px;
+    padding-right: 75px;
+    margin-bottom: 35px;
+  }
 }
 
 // МОДАЛЬНЫЕ ОКНА
@@ -141,7 +171,12 @@
 @media (min-width: @tablet-width) {
   .form__sent-message {
     & .modal__title {
-      font-size: 30px;
+      font-size: 25.5px;
+    }
+
+    & .modal__text {
+      font-size: 12.5px;
+      padding-top: 23px;
     }
   }
 
@@ -150,12 +185,16 @@
     height: 518px;
   }
 
+  .hero__slogan-image {
+    padding-top: 78px;
+  }
+
   .hero-for-catalog-form {
     background-color: #cdd0d3;
     background-image: url("/img/hero@1x.jpg");
     // background-image: image("/source/img/hero@1x.jpg#xywh=0,50,350,389");
     background-size: cover;
-    background-position: 50% 100%;
+    background-position: 50% 101%;
     background-repeat: no-repeat;
     position: relative;
     height: 293px;
@@ -194,7 +233,7 @@
   .modal__title {
     font-size: 30px;
     line-height: 40px;
-    padding-top: 52px;
+    padding-top: 45px;
   }
 
   .modal__text {
@@ -204,12 +243,12 @@
     font-size: 13px;
   }
 
-  .modal__button {
-    font-size: 18px;
-    padding-top: 18px;
+  .form__sent-message .modal__button {
+    font-size: 18.5px;
+    padding-top: 22px;
     padding-bottom: 14px;
-    padding-left: 139px;
-    padding-right: 139px;
+    padding-left: 154px;
+    padding-right: 154px;
     margin: 44px 91px;
     border: none;
     background-color: rgba(129, 179, 210, 1);
@@ -241,8 +280,18 @@
     .modal__button {
       width: 272px;
       margin: 0;
-      margin-bottom: 50px;
+      margin-bottom: 53px;
+      background-color: #81b3d2;
     }
+  }
+
+  .form__error-message .modal__title {
+    font-size: 26px;
+  }
+
+  .form__error-message .modal__text {
+    padding-top: 24px;
+    padding-bottom: 48px;
   }
 }
 // DESKTOP
@@ -255,7 +304,7 @@
     background-position: 50% 100%;
     background-repeat: no-repeat;
     position: relative;
-    height: 274px;
+    height: 300px;
     margin: 0;
     padding: 0;
 
@@ -271,6 +320,10 @@
   .modal__wrapper {
     left: 320px;
     right: 320px;
+  }
+
+  .hero::after {
+    bottom: -1px;
   }
 
   .error {
