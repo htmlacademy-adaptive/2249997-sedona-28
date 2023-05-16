@@ -143,11 +143,11 @@
 
     &:last-of-type {
       padding-bottom: 28px;
-      // Почему это считаеться за тройную вложенность???
-      .advantage__wrapper {
-        border-bottom: none;
-        padding-bottom: 0;
-      }
+    }
+
+    &:last-of-type .advantage__wrapper {
+      border-bottom: none;
+      padding-bottom: 0;
     }
   }
 
@@ -159,7 +159,7 @@
   &--housing {
     position: relative;
 
-    & h3 {
+    h3 {
       padding-top: 32px;
     }
 
@@ -198,7 +198,7 @@
     position: relative;
     // padding-top: 25px;
 
-    & .advantage__description {
+    .advantage__description {
       padding-bottom: 44px;
     }
 
@@ -375,13 +375,13 @@
 
   .advantage {
     &--housing {
-      & h3 {
+      h3 {
         text-align: center;
         padding-left: 0;
         padding-top: 157px;
       }
 
-      & p {
+      p {
         text-align: center;
         padding-left: 0;
         padding-bottom: 61px;
@@ -405,13 +405,13 @@
     &--meal {
       margin-top: 0;
 
-      & h3 {
+      h3 {
         text-align: center;
         padding-left: 0;
         padding-top: 157px;
       }
 
-      & p {
+      p {
         text-align: center;
         padding-left: 0;
         padding-bottom: 61px;
@@ -434,13 +434,13 @@
     &--souvenirs {
       padding-top: 0;
 
-      & h3 {
+      h3 {
         text-align: center;
         padding-left: 0;
         padding-top: 153px;
       }
 
-      & p {
+      p {
         text-align: center;
         padding-left: 0;
         padding-bottom: 61px;
@@ -540,7 +540,7 @@
         top: 67px;
       }
 
-      & h3 {
+      h3 {
         padding-top: 169px;
       }
     }
@@ -559,7 +559,7 @@
         top: 70px;
       }
 
-      & h3 {
+      h3 {
         padding-top: 166px;
       }
     }
@@ -578,11 +578,11 @@
         top: 64px;
       }
 
-      & h3 {
+      h3 {
         padding-top: 170px;
       }
 
-      & .advantage__description {
+      .advantage__description {
         padding-bottom: 66px;
       }
     }
