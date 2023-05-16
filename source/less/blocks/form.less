@@ -206,6 +206,10 @@
     &:hover {
       color: rgba(129, 179, 210, 1);
     }
+
+    &:disabled {
+      color: rgb(128, 128, 128);
+    }
   }
 }
 
@@ -242,6 +246,10 @@
 
     &:hover {
       color: rgba(129, 179, 210, 1);
+    }
+
+    &:disabled {
+      color: rgb(128, 128, 128);
     }
   }
 }
@@ -294,12 +302,12 @@
     padding: 0;
 
 
-    &.wrapper-name {
+    .wrapper-name {
       border-right: 1px solid rgba(229, 229, 229, 1);
       padding-right: 43px;
     }
 
-    &.wrapper-tel-mail {
+    .wrapper-tel-mail {
       .fieldset__title {
         position: relative;
         right: 11px;
@@ -534,7 +542,7 @@
     // justify-content: space-around;
     justify-content: flex-start;
 
-    & .form__visited-places-item {
+    .form__visited-places-item {
       padding: 0;
       // padding-right: 61px;
       padding-left: 61px;
@@ -542,9 +550,11 @@
       &:last-of-type {
         padding-right: 0;
       }
+
       &:first-of-type {
         padding-left: 0;
       }
+
       &:nth-of-type(5n+5) {
         padding-left: 0;
       }
