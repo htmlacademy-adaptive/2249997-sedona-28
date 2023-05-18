@@ -53,13 +53,19 @@ img {
   text-transform: uppercase;
   background-color: rgba(129, 179, 210, 1);
   cursor: pointer;
+  opacity: 0.8;
 
   &:hover {
-    opacity: 0.8;
+    opacity: 1;
   }
 
   &:active {
     opacity: 1;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:disabled {
+    background-color: rgba(229, 229, 229, 1);
   }
 }
 // Свойство для полей ввода формы
