@@ -11,7 +11,7 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <div class="logo-wrapper">
-            <a class="main-header__logo" href="index.html">
+            <a class="main-header__logo logo" href="index.html">
               <img src="./img/page-logo.svg" width="185" height="96" alt="Логотип Седона" class="logo__image">
             </a>
           </div>
@@ -49,10 +49,11 @@
           <p class="review__description">
             Помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="br-for-tablet-desktop"> а также о посещенных вами достопримечательностях
           </p>
-          <form class="review__form form" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="review__form form fieldset" action="https://echo.htmlacademy.ru/" method="get">
             <div class="fieldset-wrapper wrapper-name">
               <fieldset class="form__name">
                 <legend class="fieldset__title title">Представьтесь:</legend>
+                <!-- поменять fieldset title на form title -->
                 <label class="form__field-title">ИМЯ*:
                   <input class="form__input title" type="text" value="Пётр">
                 </label>
@@ -141,7 +142,8 @@
             <div class="fieldset-wrapper wrapper-textarea">
               <fieldset class="text-review">
                 <legend class="fieldset__title title">Опишите свои эмоции:</legend>
-                <textarea class="form__input--opacity title text-review__textarea" name="Эмоции подробно" rows="5" placeholder="Опишите подробно все свои восторги "></textarea>
+                <textarea class="form__input form__input--opacity title text-review__textarea" name="Эмоции подробно" rows="5" placeholder="Опишите подробно все свои восторги "></textarea>
+                <!-- Добавить form__input -->
                 <input class="form__submit button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
                 <p class="form__notice-text">* — обязательные поля</p>
               </fieldset>
@@ -149,7 +151,7 @@
           </form>
         </div>
       </section>
-      <section class="form__error-message error modal">
+      <section class="error modal">
         <h2 class="visually-hidden">Окно сообщающее об ошибке</h2>
         <div class="modal__wrapper">
           <div class="modal__window">
@@ -161,7 +163,7 @@
           </div>
         </div>
       </section>
-      <section class="form__sent-message succses modal">
+      <section class="succses modal">
         <h2 class="visually-hidden">Окно сообщающее об отправке отзыва</h2>
         <div class="modal__wrapper">
           <div class="modal__window">

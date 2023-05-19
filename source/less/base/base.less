@@ -8,7 +8,15 @@ body {
   color: #333333;
   text-transform: uppercase;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -25,6 +33,7 @@ body {
   overflow: hidden;
 }
 // Фон для всей страницы
+// Написать по поводу этой проблемы проверяющему
 .page__body {
   background-color: #ffffff;
 }
@@ -36,7 +45,7 @@ img {
 }
 // Шрифт для заголовков
 .title {
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
