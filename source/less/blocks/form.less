@@ -1,20 +1,20 @@
 .review__title {
   text-align: center;
   margin: 0;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .review__description {
   text-align: center;
   margin: 0;
   padding-top: 24px;
-  padding-bottom: 28px;
-  font-size: 12px;
+  padding-bottom: 26px;
+  font-size: 14px;
 }
 
 .form__field-title {
   padding-left: 16px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .form__input {
@@ -24,7 +24,7 @@
   padding-right: 26px;
   margin-bottom: 16px;
   width: 85%;
-  font-size: 16px;
+  font-size: 18px;
 
   &--opacity {
     padding: 16px;
@@ -62,7 +62,7 @@
   text-align: center;
   padding-bottom: 19px;
   position: relative;
-  font-size: 15.5px;
+  font-size: 18px;
 }
 
 .fieldset-wrapper {
@@ -86,7 +86,7 @@
 }
 
 .wrapper-radio {
-  padding-top: 23px;
+  padding-top: 25px;
 
   .fieldset__title {
     padding-bottom: 5px;
@@ -99,14 +99,14 @@
   }
 
   .title {
-    font-size: 15.5px;
+    font-size: 18px;
   }
 }
 
 .text-review {
   textarea {
     width: 89%;
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 
@@ -118,10 +118,10 @@
   margin: 0 auto;
   padding: 16px 50px;
   border: none;
-  margin-top: 50px;
+  margin-top: 34px;
   z-index: 2;
   position: relative;
-  font-size: 18px;
+  font-size: 21px;
 }
 
 .form__notice-text {
@@ -129,7 +129,7 @@
   text-align: end;
   color: rgba(51, 51, 51, 0.6);
   padding-top: 2px;
-  font-size: 10.5px;
+  font-size: 12px;
 }
 
 .title-phone {
@@ -195,12 +195,12 @@
   }
 
   .control-label {
-    padding-left: 16px;
+    padding-left: 13px;
     vertical-align: top;
     position: relative;
     top: 26px;
     cursor: pointer;
-    font-size: 15.5px;
+    font-size: 18px;
 
     // &:hover {
     //   color: rgba(129, 179, 210, 1);
@@ -237,7 +237,7 @@
   }
 
   .control-label {
-    padding-left: 16px;
+    padding-left: 13px;
     vertical-align: top;
     position: relative;
     top: 26px;
@@ -267,7 +267,7 @@
 // TABLET
 @media (min-width: @tablet-width) {
   .review__wrapper {
-    padding-top: 62px;
+    padding-top: 60px;
     padding-left: 8%;
     padding-right: 8%;
   }
@@ -277,7 +277,7 @@
   }
 
   .review__title {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .review__description {
@@ -285,15 +285,17 @@
     padding-bottom: 108px;
     padding-left: 12%;
     padding-right: 12%;
-    font-size: 12.5px;
+    font-size: 14px;
   }
 
   .title-phone::after {
-    right: -14px;
+    right: -12px;
+    top: 22px;
   }
 
   .title-email::after {
     right: -14px;
+    top: 22px;
   }
 
   .fieldset-wrapper {
@@ -321,7 +323,7 @@
   }
 
   .form__input:not(.form__input--phone-icon) {
-    padding-right: 42px;
+    padding-right: 4px;
   }
 
   .form__tel-mail .form__input--mail-icon {
@@ -330,8 +332,8 @@
 
   .fieldset__title {
     padding-bottom: 27px;
-    font-size: 18px;
-    padding-left: 10px;
+    font-size: 21px;
+    // padding-left: 10px;
 
     &::before {
       display: none;
@@ -341,6 +343,14 @@
   .form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form .form__name {
+    border-right: solid 1px rgba(219, 219, 219, 1);
+  }
+
+  .form__name .fieldset__title {
+    left: -15px;
   }
 
   .wrapper-name {
@@ -355,7 +365,7 @@
   // Радиокнопки отвечающие за общее впечатление
   .wrapper-radio {
     grid-column: 1/3;
-    padding-top: 45px;
+    padding-top: 47px;
 
     .radio {
       border-top: 1px solid rgba(219, 219, 219, 1);
@@ -397,11 +407,11 @@
       border-top: 1px solid rgba(219, 219, 219, 1);
 
       .fieldset__title {
-        padding-left: 65px;
+        padding-left: 63px;
         padding-right: 65px;
         position: relative;
         top: 3px;
-        font-size: 18px;
+        font-size: 21px;
       }
     }
   }
@@ -410,7 +420,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-top: 15px;
+    padding-top: 12px;
     padding-left: 65px;
   }
 
@@ -422,7 +432,7 @@
 
   .wrapper-textarea {
     grid-column: 1/3;
-    padding-top: 25px;
+    padding-top: 27px;
     padding-bottom: 43px;
   }
 
@@ -434,28 +444,28 @@
       padding-right: 65px;
       position: relative;
       top: 16px;
-      font-size: 18.5px;
+      font-size: 21px;
     }
 
     textarea {
-      width: 95%;
+      width: 97%;
       margin-top: 15px;
-      font-size: 15.5px;
+      font-size: 18px;
       padding-bottom: 13px;
     }
 
     .form__submit {
-      padding: 18px 73px;
-      margin-top: 43px;
+      padding: 18px 70px;
+      margin-top: 28px;
       background-color: rgba(129, 179, 210, 1);
-      font-size: 17.5px;
+      font-size: 21px;
     }
 
     .form__notice-text {
       color: rgba(51, 51, 51, 1);
       position: relative;
       top: -36px;
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 }
@@ -469,7 +479,11 @@
   }
 
   .fieldset__title {
-    font-size: 18px;
+    font-size: 21px;
+  }
+
+  .form__name .fieldset__title {
+    left: -25px;
   }
 
   .review__description {
@@ -484,6 +498,14 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .form__grade-list {
+    padding-left: 17px;
+
+    .control-mark {
+      margin-top: 11px;
+    }
+  }
+
   .form__name {
     .form__field-title {
       &:first-of-type {
@@ -492,16 +514,22 @@
     }
   }
 
-  .fieldset-wrapper.wrapper-tel-mail .fieldset__title {
-    right: 5px;
+  .form__input:not(.form__input--phone-icon) {
+    padding-right: 48px;
+  }
+
+  .form__input--phone-icon {
+    padding-right: 48px;
   }
 
   .title-phone::after {
-    right: -32px;
+    right: 0;
+    top: 21px;
   }
 
   .title-email::after {
-    right: -32px;
+    right: 0;
+    top: 21px;
   }
 
   .wrapper-tel-mail {
@@ -520,27 +548,23 @@
     padding-right: 32px;
   }
 
-  .form__grade-list {
-    padding-left: 17px;
-  }
-
   .form__grade-list .form__grade-item {
     padding-top: 29px;
   }
 
   .wrapper-checkbox {
-    padding-top: 66px;
+    padding-top: 68px;
   }
 
   .form__visited-places-list {
     padding-left: 45px;
     padding-right: 13px;
-    padding-top: 46px;
+    padding-top: 44px;
     justify-content: flex-start;
 
     .form__visited-places-item {
       padding: 0;
-      padding-left: 61px;
+      padding-left: 63px;
 
       &:last-of-type {
         padding-right: 0;
@@ -591,10 +615,10 @@
 
   .fieldset-wrapper .text-review textarea {
     margin-left: 10%;
-    width: 77%;
+    width: 73.5%;
   }
 
   .fieldset-wrapper .text-review .form__submit {
-    padding: 18px 104px;
+    padding: 18px 102px;
   }
 }
