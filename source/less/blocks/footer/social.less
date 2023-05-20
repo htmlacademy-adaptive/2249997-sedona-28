@@ -1,0 +1,21 @@
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social__item {
+  padding-left: 6px;
+
+  &:hover rect {
+    fill: rgba(102, 158, 192, 1);
+  }
+
+  &:active rect {
+    fill: rgba(84, 150, 189, 1);
+  }
+
+  &:active path {
+    opacity: 0.5;
+  }
+}

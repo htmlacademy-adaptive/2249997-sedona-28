@@ -1,0 +1,63 @@
+.title-phone {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 57px;
+    height: 57px;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center;
+    background-image: url("/img/form/input-phone-icon.svg");
+    background-color: rgba(230, 230, 230, 1);
+    z-index: 10;
+    position: absolute;
+    top: 19px;
+    right: -10px;
+  }
+}
+
+.title-email {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 57px;
+    height: 57px;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center;
+    background-image: url("/img/form/form-input-mail-icon.svg");
+    background-color: rgba(230, 230, 230, 1);
+    z-index: 10;
+    position: absolute;
+    top: 19px;
+    right: -10px;
+  }
+}
+
+// TABLET
+@media (min-width: @tablet-width) {
+  .title-phone::after {
+    right: -12px;
+    top: 22px;
+  }
+
+  .title-email::after {
+    right: -14px;
+    top: 22px;
+  }
+}
+
+// DESKTOP
+@media (min-width: @desktop-width) {
+  .title-phone::after {
+    right: 0;
+    top: 21px;
+  }
+
+  .title-email::after {
+    right: 0;
+    top: 21px;
+  }
+}

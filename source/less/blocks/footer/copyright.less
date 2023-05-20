@@ -1,0 +1,65 @@
+.copyright {
+  text-align: center;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  font-size: 14px;
+}
+
+.copyright__link {
+  position: relative;
+  vertical-align: middle;
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  display: inline-block;
+  padding: 7px 0;
+  padding-right: 40px;
+
+  svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &:hover {
+    color: rgba(129, 179, 210, 1);
+  }
+
+  &:hover path {
+    fill: rgba(129, 179, 210, 1);
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
+  &:active path {
+    fill: #b3b3b3;
+  }
+}
+
+// TABLET
+@media (min-width: @tablet-width) {
+  .copyright__link {
+    padding-top: 25px;
+    padding-right: 49px;
+  }
+
+  .copyright__link svg {
+    top: 17px;
+    right: 7px;
+  }
+}
+
+// DESKTOP
+@media (min-width: @desktop-width) {
+  .copyright__link {
+    padding-top: 27px;
+    padding-right: 33px;
+  }
+
+  .copyright__link svg {
+    top: 19px;
+    right: -7px;
+  }
+}
