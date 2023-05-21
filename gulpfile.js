@@ -64,8 +64,8 @@ export const createWebp = () => {
 }
 
 // SVG
-const svg = (done) => {
-  gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+export const svg = (done) => {
+  gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
   done();
