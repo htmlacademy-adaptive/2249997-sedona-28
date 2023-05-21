@@ -25,8 +25,7 @@
 .advantages__title {
   margin: 0 auto;
   text-align: center;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding: 0 24px;
   min-width: 284px;
   box-sizing: border-box;
   font-size: 18px;
@@ -71,8 +70,14 @@
 .advantage__description {
   margin: 0 auto;
   text-align: center;
+  padding: 0 5px;
   padding-top: 17px;
   font-size: 14px;
+}
+
+.advantage--gray-background .advantage__description {
+  padding-left: 19px;
+  padding-right: 19px;
 }
 
 .advantage__image {
@@ -199,6 +204,13 @@
     }
   }
 
+  .advantage--gray-background .advantage__description {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 14px;
+    padding-top: 25px;
+  }
+
   .advantages__title {
     font-size: 21px;
   }
@@ -218,13 +230,15 @@
 
   .advantage__title--blue-background {
     padding-top: 53px;
+    // padding-left: 40px;
+    // padding-right: 40px;
     font-size: 21px;
   }
 
   .advantage--with-icon {
     .advantage__description {
       text-align: center;
-      padding-left: 0;
+      padding-left: 5px;
       font-size: 14px;
       padding-top: 25px;
     }
@@ -271,17 +285,22 @@
 
   .advantage--devil-bridge .title {
     padding-top: 53px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .advantage__title--gray-background {
     padding-top: 42px;
     font-size: 21px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
-  .advantage--gray-background .advantage__description {
-    font-size: 14px;
-    padding-top: 25px;
-  }
+  // .advantage--gray-background .las-vegas {
+  //   padding-left: 10px;
+  //   padding-right: 10px;
+  //   word-wrap: break-word;
+  // }
 
   .advantage__wrapper {
     padding-left: 28px;
@@ -302,8 +321,12 @@
 
       p {
         text-align: center;
-        padding-left: 0;
         padding-bottom: 61px;
+      }
+
+      .advantage__description {
+        padding-left: 10px;
+        padding-right: 10px;
       }
 
       &::before {
@@ -331,8 +354,13 @@
 
       p {
         text-align: center;
-        padding-left: 0;
         padding-bottom: 61px;
+      }
+
+      .advantage__description {
+        padding-left: 22px;
+        padding-right: 23px;
+        padding-top: 22px;
       }
 
       &::before {
@@ -364,6 +392,12 @@
         padding-bottom: 61px;
       }
 
+      .advantage__description {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 63px;
+      }
+
       &::before {
         content: "";
         background-image: url("/img/index/icon-gift.svg");
@@ -376,10 +410,6 @@
         left: 38%;
         top: 60px;
       }
-
-      .advantage__description {
-        padding-bottom: 63px;
-      }
     }
   }
 }
@@ -391,9 +421,26 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .advantage--with-icon .advantage__description {
+    padding-left: 21px;
+    padding-right: 20px;
+  }
+
+  // .advantage--souvenirs .advantage__description {
+  //   padding-left: 75px;
+  //   padding-right: 75px;
+  // }
+
   .advantage--gray-background .advantage__description {
     padding-top: 22px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
+
+  // .advantage--gray-background .las-vegas {
+  //   padding-left: 33px;
+  //   padding-right: 36px;
+  // }
 
   .advantages__wrapper {
     padding-top: 60px;
@@ -411,6 +458,22 @@
   .advantage--blue-background {
     grid-column: 1/4;
     display: flex;
+  }
+
+  .advantage__title--blue-background {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .advantage--devil-bridge .title {
+    padding-left: 97px;
+    padding-right: 97px;
+  }
+
+  .advantage__title--gray-background {
+    padding-left: 95px;
+    padding-right: 95px;
+    padding-top: 55px;
   }
 
   .devil-brigde {
@@ -434,6 +497,11 @@
 
       h3 {
         padding-top: 169px;
+      }
+
+      .advantage__description {
+        padding-left: 30px;
+        padding-right: 30px;
       }
     }
 
@@ -476,12 +544,10 @@
 
       .advantage__description {
         padding-bottom: 66px;
+        // padding-left: 20px;
+        // padding-right: 20px;
       }
     }
-  }
-
-  .advantage__title--gray-background {
-    padding-top: 55px;
   }
 
   .advantage__decoration-numbers {
