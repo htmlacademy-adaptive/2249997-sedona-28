@@ -19,3 +19,101 @@
     opacity: 0.5;
   }
 }
+
+// VK
+.social__item--vk .social__link {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 48px;
+  height: 48px;
+
+  &::after {
+    content: "";
+    background-image: url("./img/icons/social-vk.svg");
+    background-color: #0000ff;
+    object-fit: cover;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    z-index: 100;
+  }
+}
+
+.social__item--vk .social__link:hover::after {
+  background-color: #00ffff;
+  opacity: 0.5;
+}
+
+// Telegramm
+.social__item--telegram .social__link {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 48px;
+  height: 48px;
+
+  &::after {
+    content: "";
+    mask-image: url("/img/social-tg.svg");
+    background-color: #ff6347;
+    object-fit: cover;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+  }
+}
+
+.social__item--telegram .social__link:hover::after {
+  background-color: #00ffff;
+}
+
+// youtube
+.social__item--youtube .social__link {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 48px;
+  height: 48px;
+
+  &::after {
+    content: "";
+    mask-image: url("/img/social-yt.svg");
+    background-color: #ffc0cb;
+    object-fit: cover;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+  }
+}
+
+.social__item--youtube .social__link:hover::after {
+  background-color: #00ffff;
+}
+
+// copyright icon
+.main-footer__copyright .copyright__link {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 27px;
+  height: 35px;
+
+  &::after {
+    content: "";
+    mask-image: url("/img/htmlacademy-black.svg");
+    background-color: #000000;
+    object-fit: cover;
+    width: 27px;
+    height: 35px;
+    position: absolute;
+  }
+}
+
+.main-footer__copyright .copyright__link:hover::after {
+  background-color: #00ffff;
+}
