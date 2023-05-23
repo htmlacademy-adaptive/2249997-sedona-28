@@ -1,0 +1,48 @@
+.br-for-tablet-desktop {
+  display: none;
+}
+
+.br-for-tablet {
+  display: none;
+}
+
+.br-for-desktop {
+  display: none;
+}
+
+.br-for-mobile-desktop {
+  display: block;
+}
+
+// TABLET
+@media (min-width: @tablet-width) {
+  .br-for-mobile {
+    display: none;
+  }
+
+  .br-for-mobile-desktop {
+    display: none;
+  }
+
+  .br-for-tablet-desktop {
+    display: block;
+  }
+
+  .br-for-tablet {
+    display: block;
+  }
+}
+// DESKTOP
+@media (min-width: @desktop-width) {
+  .br-for-mobile-desktop {
+    display: block;
+  }
+
+  .br-for-tablet {
+    display: none;
+  }
+
+  .br-for-desktop {
+    display: block;
+  }
+}

@@ -1,6 +1,6 @@
 // Базовый шрифт для всего документа
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -8,6 +8,15 @@ body {
   color: #333333;
   text-transform: uppercase;
   margin: 0 auto;
+  max-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -23,45 +32,14 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-// Фон для всей страницы
-.page__body {
-  background-color: #ffffff;
-}
+
 // Нормализуем все изображения
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
-// Шрифт для заголовков
-.title {
-  font-family: "PT Sans Bold", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  align-items: center;
-  color: #333333;
-}
-// Свойства для кнопок
-.button {
-  color: #ffffff;
-  font-family: "PT Sans", sans-serif;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  align-items: center;
-  text-transform: uppercase;
-  background-color: rgba(129, 179, 210, 1);
-  cursor: pointer;
 
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 1;
-  }
-}
 // Свойство для полей ввода формы
 .control-label {
   text-transform: none;

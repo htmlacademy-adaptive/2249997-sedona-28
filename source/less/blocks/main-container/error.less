@@ -1,0 +1,76 @@
+// ОКНО ОШИБКИ
+.error {
+  display: none;
+
+  .modal__button {
+    margin-top: 0;
+    font-size: 16px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 35px;
+  }
+
+  .modal__title {
+    font-size: 18px;
+    padding-top: 46px;
+  }
+
+  .modal__text {
+    padding-top: 26px;
+    font-size: 14px;
+    padding-bottom: 27px;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+}
+
+// TABLET
+@media (min-width: @tablet-width) {
+  .error {
+    .modal__wrapper {
+      width: 400px;
+      padding-left: 46px;
+      padding-right: 46px;
+      left: 184px;
+      right: 184px;
+    }
+
+    .button-wrapper {
+      width: 0;
+      left: 15px;
+      margin: 0;
+    }
+
+    .modal__button {
+      width: 274px;
+      margin: 0;
+      margin-bottom: 53px;
+      background-color: #81b3d2;
+      font-size: 21px;
+    }
+  }
+
+  .error .modal__title {
+    font-size: 30px;
+    padding-top: 48px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .error .modal__text {
+    padding-top: 24px;
+    padding-bottom: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+// DESKTOP
+@media (min-width: @desktop-width) {
+  .error {
+    .modal__wrapper {
+      left: 400px;
+      right: 400px;
+    }
+  }
+}

@@ -2,51 +2,19 @@
   padding-top: 32px;
 }
 
-.br-for-tablet-desktop {
-  display: none;
-}
-
-.br-for-tablet {
-  display: none;
-}
-
 .advantage--with-icon {
   .advantage__description {
     padding-bottom: 32px;
     padding-left: 47px;
     text-align: start;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .advantage__title {
     padding-left: 47px;
     text-align: start;
-    font-size: 16px;
+    font-size: 18px;
   }
-}
-
-.br-for-desktop {
-  display: none;
-}
-
-.map {
-  position: relative;
-
-  &::before {
-    content: "";
-    background-image: url("/img/index/index-map-marker.svg");
-    background-size: cover;
-    width: 27px;
-    height: 27px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-.map__image {
-  width: 100%;
 }
 
 .advantage__wrapper {
@@ -57,11 +25,10 @@
 .advantages__title {
   margin: 0 auto;
   text-align: center;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding: 0 24px;
   min-width: 284px;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 18px;
   max-width: 520px;
 }
 
@@ -69,9 +36,9 @@
   margin: 0 auto;
   text-align: center;
   padding: 0 20px;
-  padding-top: 35px;
+  padding-top: 37px;
   padding-bottom: 55px;
-  font-size: 13px;
+  font-size: 14px;
   position: relative;
 
   &::after {
@@ -103,8 +70,14 @@
 .advantage__description {
   margin: 0 auto;
   text-align: center;
+  padding: 0 5px;
   padding-top: 17px;
-  font-size: 13px;
+  font-size: 14px;
+}
+
+.advantage--gray-background .advantage__description {
+  padding-left: 19px;
+  padding-right: 19px;
 }
 
 .advantage__image {
@@ -116,7 +89,7 @@
 }
 
 .advantage__description--blue-background {
-  font-size: 13px;
+  font-size: 14px;
   padding-bottom: 38px;
 }
 
@@ -139,7 +112,7 @@
     }
 
     &:last-of-type {
-      padding-bottom: 28px;
+      padding-bottom: 29px;
     }
 
     &:last-of-type .advantage__wrapper {
@@ -211,7 +184,7 @@
 .advantage__title--blue-background {
   color: rgba(255, 255, 255, 1);
   padding-top: 33px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .advantage--devil-bridge .title {
@@ -220,60 +193,35 @@
 
 .advantage__title--gray-background {
   padding-top: 24px;
-  font-size: 16px;
-}
-
-.hotel-search__title {
-  font-weight: 700;
   font-size: 18px;
 }
 
-.hotel-search__text {
-  font-size: 12.5px;
-  margin: 0;
-  padding-top: 5px;
-  padding-bottom: 31px;
-}
-
-.hotel-search__wrapper {
-  padding: 0 6%;
-  padding-top: 25px;
-  text-align: center;
-  padding-bottom: 49px;
-}
-
-.hotel-search__link {
-  display: inline-block;
-  padding: 16px 50px;
-  text-decoration: none;
-  background-color: rgba(129, 179, 210, 1);
-  font-size: 18px;
-}
 // TABLET
 @media (min-width: @tablet-width) {
-  .br-for-mobile {
-    display: none;
+  .advantage--gray-background {
+    &:last-of-type {
+      padding-bottom: 63px;
+    }
+  }
+
+  .advantage--gray-background .advantage__description {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 14px;
+    padding-top: 25px;
   }
 
   .advantages__title {
-    font-size: 18px;
+    font-size: 21px;
   }
 
   .advantages__wrapper {
     padding-top: 49px;
   }
 
-  .hotel-search__title {
-    font-size: 26px;
-    margin: 0;
-    padding-top: 39px;
-    padding-left: 6px;
-    padding-bottom: 30px;
-  }
-
   .advantages__reasons {
     padding-top: 29px;
-    font-size: 12.5px;
+    font-size: 14px;
 
     &::after {
       display: none;
@@ -282,35 +230,29 @@
 
   .advantage__title--blue-background {
     padding-top: 53px;
-    font-size: 18px;
+    // padding-left: 40px;
+    // padding-right: 40px;
+    font-size: 21px;
   }
 
   .advantage--with-icon {
     .advantage__description {
       text-align: center;
-      padding-left: 0;
-      font-size: 12.5px;
+      padding-left: 5px;
+      font-size: 14px;
       padding-top: 25px;
     }
 
     .advantage__title {
       text-align: center;
       padding-left: 0;
-      font-size: 18px;
+      font-size: 21px;
     }
-  }
-
-  .hero__slogan-image {
-    width: 461px;
   }
 
   .advantage--gray-background .advantage__wrapper {
     padding-bottom: 0;
     border-bottom: none;
-  }
-
-  .br-for-tablet-desktop {
-    display: block;
   }
 
   .advantage__br--tablet-width {
@@ -329,7 +271,7 @@
   .advantage__description--blue-background {
     padding-top: 24px;
     padding-bottom: 30px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .advantage--blue-background {
@@ -343,17 +285,22 @@
 
   .advantage--devil-bridge .title {
     padding-top: 53px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .advantage__title--gray-background {
     padding-top: 42px;
-    font-size: 18px;
+    font-size: 21px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
-  .advantage--gray-background .advantage__description {
-    font-size: 12px;
-    padding-top: 25px;
-  }
+  // .advantage--gray-background .las-vegas {
+  //   padding-left: 10px;
+  //   padding-right: 10px;
+  //   word-wrap: break-word;
+  // }
 
   .advantage__wrapper {
     padding-left: 28px;
@@ -374,8 +321,12 @@
 
       p {
         text-align: center;
-        padding-left: 0;
         padding-bottom: 61px;
+      }
+
+      .advantage__description {
+        padding-left: 10px;
+        padding-right: 10px;
       }
 
       &::before {
@@ -403,8 +354,13 @@
 
       p {
         text-align: center;
-        padding-left: 0;
         padding-bottom: 61px;
+      }
+
+      .advantage__description {
+        padding-left: 22px;
+        padding-right: 23px;
+        padding-top: 22px;
       }
 
       &::before {
@@ -436,6 +392,12 @@
         padding-bottom: 61px;
       }
 
+      .advantage__description {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 63px;
+      }
+
       &::before {
         content: "";
         background-image: url("/img/index/icon-gift.svg");
@@ -448,41 +410,37 @@
         left: 38%;
         top: 60px;
       }
-
-      .advantage__description {
-        padding-bottom: 63px;
-      }
     }
   }
-
-  .hotel-search__wrapper {
-    padding-top: 60px;
-    padding-bottom: 55px;
-  }
-
-  .hotel-search__link {
-    font-size: 19px;
-    padding: 18px 135px;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: rgba(129, 179, 210, 1);
-    margin-top: 14px;
-  }
-
-  .hotel-search__text {
-    margin: 0;
-  }
-
-  .br-for-tablet {
-    display: block;
-  }
 }
+
 // DESKTOP
 @media (min-width: @desktop-width) {
   .advantages__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .advantage--with-icon .advantage__description {
+    padding-left: 21px;
+    padding-right: 20px;
+  }
+
+  // .advantage--souvenirs .advantage__description {
+  //   padding-left: 75px;
+  //   padding-right: 75px;
+  // }
+
+  .advantage--gray-background .advantage__description {
+    padding-top: 22px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  // .advantage--gray-background .las-vegas {
+  //   padding-left: 33px;
+  //   padding-right: 36px;
+  // }
 
   .advantages__wrapper {
     padding-top: 60px;
@@ -502,16 +460,24 @@
     display: flex;
   }
 
+  .advantage__title--blue-background {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .advantage--devil-bridge .title {
+    padding-left: 97px;
+    padding-right: 97px;
+  }
+
+  .advantage__title--gray-background {
+    padding-left: 95px;
+    padding-right: 95px;
+    padding-top: 55px;
+  }
+
   .devil-brigde {
     order: -1;
-  }
-
-  .br-for-desktop {
-    display: block;
-  }
-
-  .br-for-tablet {
-    display: none;
   }
 
   .advantage {
@@ -531,6 +497,11 @@
 
       h3 {
         padding-top: 169px;
+      }
+
+      .advantage__description {
+        padding-left: 30px;
+        padding-right: 30px;
       }
     }
 
@@ -573,12 +544,10 @@
 
       .advantage__description {
         padding-bottom: 66px;
+        // padding-left: 20px;
+        // padding-right: 20px;
       }
     }
-  }
-
-  .advantage__title--gray-background {
-    padding-top: 52px;
   }
 
   .advantage__decoration-numbers {
@@ -587,17 +556,5 @@
 
   .advantage--gray-background:last-of-type {
     padding-bottom: 51px;
-  }
-
-  .hotel-search__title {
-    padding-top: 6px;
-  }
-
-  .hotel-search__link {
-    margin-top: 12px;
-  }
-
-  .hotel-search__wrapper {
-    padding-bottom: 67px;
   }
 }
