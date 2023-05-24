@@ -31,22 +31,27 @@
   display: block;
   margin: 0 auto;
   padding-top: 38px;
+  position: relative;
 }
 
 .video {
   position: relative;
 
-  &::before {
-    content: "";
-    background-image: url("/img/catalog/catalog-play-icon.svg");
-    background-size: cover;
-    width: 48px;
-    height: 54px;
+  .video__play {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, 95%);
+    z-index: 2;
+    top: 218px;
+    left: 117px;
+    margin: 0 auto;
     cursor: pointer;
+  }
+
+  .video__play:hover {
+    opacity: 0.8;
+  }
+
+  .video__play:active {
+    opacity: 0.5;
   }
 }
 
@@ -86,6 +91,27 @@
   .video::before {
     top: 53%;
   }
+
+  .video {
+    position: relative;
+
+    .video__play {
+      position: absolute;
+      z-index: 2;
+      top: 466px;
+      left: 300px;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+
+    .video__play:hover {
+      opacity: 0.8;
+    }
+
+    .video__play:active {
+      opacity: 0.5;
+    }
+  }
 }
 
 // DESKTOP
@@ -107,5 +133,26 @@
 
   .video::before {
     top: 50%;
+  }
+
+  .video {
+    position: relative;
+
+    .video__play {
+      position: absolute;
+      z-index: 2;
+      top: 470px;
+      left: 576px;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+
+    .video__play:hover {
+      opacity: 0.8;
+    }
+
+    .video__play:active {
+      opacity: 1;
+    }
   }
 }
