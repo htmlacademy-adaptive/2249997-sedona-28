@@ -9,7 +9,8 @@ body {
   text-transform: uppercase;
   margin: 0 auto;
   max-width: 320px;
-  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.15);
+  border-left: solid 40px rgba(255, 255, 255, 1);
+  border-right: solid 40px rgba(255, 255, 255, 1);
 
   @media (min-width: @tablet-width) {
     max-width: 768px;
@@ -18,6 +19,10 @@ body {
   @media (min-width: @desktop-width) {
     max-width: 1200px;
   }
+}
+
+.body__wrapper {
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.15);
 }
 
 .visually-hidden {
