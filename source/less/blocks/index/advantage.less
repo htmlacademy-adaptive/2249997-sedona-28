@@ -1,7 +1,3 @@
-.advantages__wrapper {
-  padding-top: 32px;
-}
-
 .advantage--with-icon {
   .advantage__description {
     padding-bottom: 32px;
@@ -20,40 +16,6 @@
 .advantage__wrapper {
   margin-left: 18px;
   margin-right: 18px;
-}
-
-.advantages__title {
-  margin: 0 auto;
-  text-align: center;
-  padding: 0 24px;
-  min-width: 284px;
-  box-sizing: border-box;
-  font-size: 18px;
-  max-width: 520px;
-}
-
-.advantages__reasons {
-  margin: 0 auto;
-  text-align: center;
-  padding: 0 20px;
-  padding-top: 37px;
-  padding-bottom: 55px;
-  font-size: 14px;
-  position: relative;
-
-  &::after {
-    content: "";
-    background-image: url("/img/index/index-mobile-arrow.svg");
-    background-color: rgba(129, 179, 210, 1);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 37px;
-    z-index: 100;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
 }
 
 .advantage__title {
@@ -128,19 +90,6 @@
       padding-top: 32px;
     }
 
-    // &::before {
-    //   content: "";
-    //   background-image: url("/img/index/icon-house.svg");
-    //   background-repeat: no-repeat;
-    //   background-size: cover;
-    //   width: 39px;
-    //   height: 37px;
-    //   z-index: 2;
-    //   position: absolute;
-    //   left: 18px;
-    //   top: 25px;
-    // }
-
     .advantage__icon--house {
       position: absolute;
       left: 18px;
@@ -150,19 +99,6 @@
 
   &--meal {
     position: relative;
-
-    // &::before {
-    //   content: "";
-    //   background-image: url("/img/index/icon-burger.svg");
-    //   background-repeat: no-repeat;
-    //   background-size: cover;
-    //   width: 40px;
-    //   height: 35px;
-    //   z-index: 2;
-    //   position: absolute;
-    //   left: 18px;
-    //   top: -8px;
-    // }
 
     .advantage__icon--meal {
       position: absolute;
@@ -179,19 +115,6 @@
     .advantage__description {
       padding-bottom: 44px;
     }
-
-    // &::before {
-    //   content: "";
-    //   background-image: url("/img/index/icon-gift.svg");
-    //   background-repeat: no-repeat;
-    //   background-size: cover;
-    //   width: 32px;
-    //   height: 38px;
-    //   z-index: 2;
-    //   position: absolute;
-    //   left: 22px;
-    //   top: -9px;
-    // }
 
     .advantage__icon--gift {
       position: absolute;
@@ -233,23 +156,6 @@
     padding-top: 25px;
   }
 
-  .advantages__title {
-    font-size: 21px;
-  }
-
-  .advantages__wrapper {
-    padding-top: 49px;
-  }
-
-  .advantages__reasons {
-    padding-top: 29px;
-    font-size: 14px;
-
-    &::after {
-      display: none;
-    }
-  }
-
   .advantage__title--blue-background {
     padding-top: 53px;
     // padding-left: 40px;
@@ -285,11 +191,6 @@
     display: none;
   }
 
-  .advantages__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .advantage__description--blue-background {
     padding-top: 24px;
     padding-bottom: 30px;
@@ -301,7 +202,7 @@
     display: flex;
   }
 
-  .devil-brigde {
+  .advantage__image-wrapper--devil-brigde {
     order: -1;
   }
 
@@ -317,12 +218,6 @@
     padding-left: 25px;
     padding-right: 25px;
   }
-
-  // .advantage--gray-background .las-vegas {
-  //   padding-left: 10px;
-  //   padding-right: 10px;
-  //   word-wrap: break-word;
-  // }
 
   .advantage__wrapper {
     padding-left: 28px;
@@ -350,19 +245,6 @@
         padding-left: 10px;
         padding-right: 10px;
       }
-
-      // &::before {
-      //   content: "";
-      //   background-image: url("/img/index/icon-house.svg");
-      //   background-repeat: no-repeat;
-      //   background-size: cover;
-      //   width: 77px;
-      //   height: 72px;
-      //   z-index: 2;
-      //   position: absolute;
-      //   left: 35%;
-      //   top: 60px;
-      // }
 
       .advantage__icon--house {
         position: absolute;
@@ -392,19 +274,6 @@
         padding-right: 23px;
         padding-top: 22px;
       }
-
-      // &::before {
-      //   content: "";
-      //   background-image: url("/img/index/icon-burger.svg");
-      //   background-repeat: no-repeat;
-      //   background-size: cover;
-      //   width: 77px;
-      //   height: 72px;
-      //   z-index: 2;
-      //   position: absolute;
-      //   left: 35%;
-      //   top: 60px;
-      // }
 
       .advantage__icon--meal {
         position: absolute;
@@ -436,19 +305,6 @@
         padding-bottom: 63px;
       }
 
-      // &::before {
-      //   content: "";
-      //   background-image: url("/img/index/icon-gift.svg");
-      //   background-repeat: no-repeat;
-      //   background-size: cover;
-      //   width: 67px;
-      //   height: 80px;
-      //   z-index: 2;
-      //   position: absolute;
-      //   left: 38%;
-      //   top: 60px;
-      // }
-
       .advantage__icon--gift {
         position: absolute;
         width: 67px;
@@ -462,38 +318,15 @@
 
 // DESKTOP
 @media (min-width: @desktop-width) {
-  .advantages__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .advantage--with-icon .advantage__description {
     padding-left: 21px;
     padding-right: 20px;
   }
 
-  // .advantage--souvenirs .advantage__description {
-  //   padding-left: 75px;
-  //   padding-right: 75px;
-  // }
-
   .advantage--gray-background .advantage__description {
     padding-top: 22px;
     padding-left: 8px;
     padding-right: 8px;
-  }
-
-  // .advantage--gray-background .las-vegas {
-  //   padding-left: 33px;
-  //   padding-right: 36px;
-  // }
-
-  .advantages__wrapper {
-    padding-top: 60px;
-  }
-
-  .advantages__reasons {
-    padding-bottom: 44px;
   }
 
   .advantage__wrapper {
@@ -522,25 +355,12 @@
     padding-top: 55px;
   }
 
-  .devil-brigde {
+  .advantage__image-wrapper--devil-brigde {
     order: -1;
   }
 
   .advantage {
     &--housing {
-      // &::before {
-      //   content: "";
-      //   background-image: url("/img/index/icon-house.svg");
-      //   background-repeat: no-repeat;
-      //   background-size: cover;
-      //   width: 80px;
-      //   height: 75px;
-      //   z-index: 2;
-      //   position: absolute;
-      //   left: 40%;
-      //   top: 67px;
-      // }
-
       .advantage__icon--house {
         position: absolute;
         width: 80px;
@@ -560,18 +380,6 @@
     }
 
     &--meal {
-      // &::before {
-      //   content: "";
-      //   background-image: url("/img/index/icon-burger.svg");
-      //   background-repeat: no-repeat;
-      //   background-size: cover;
-      //   width: 77px;
-      //   height: 72px;
-      //   z-index: 2;
-      //   position: absolute;
-      //   left: 39.5%;
-      //   top: 70px;
-      // }
       .advantage__icon--meal {
         position: absolute;
         width: 77px;
@@ -586,19 +394,6 @@
     }
 
     &--souvenirs {
-      // &::before {
-      //   content: "";
-      //   background-image: url("/img/index/icon-gift.svg");
-      //   background-repeat: no-repeat;
-      //   background-size: contain;
-      //   width: 67px;
-      //   height: 80px;
-      //   z-index: 2;
-      //   position: absolute;
-      //   left: 41.5%;
-      //   top: 64px;
-      // }
-
       .advantage__icon--gift {
         position: absolute;
         width: 67px;
@@ -613,8 +408,6 @@
 
       .advantage__description {
         padding-bottom: 66px;
-        // padding-left: 20px;
-        // padding-right: 20px;
       }
     }
   }
