@@ -1,0 +1,25 @@
+.grade-item {
+  .grade-item__control-mark {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .grade-item__control-label {
+    padding-left: 13px;
+    vertical-align: top;
+    position: relative;
+    top: 26px;
+    cursor: pointer;
+    font-size: 18px;
+
+    &:disabled {
+      color: rgb(128, 128, 128);
+    }
+  }
+}
