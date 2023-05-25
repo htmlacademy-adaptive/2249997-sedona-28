@@ -46,6 +46,19 @@
   margin: 0;
   padding: 0;
 
+  &::after {
+    content: "";
+    background-image: url("/img/hero-triangle-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    height: 57px;
+    width: 100%;
+    z-index: 1;
+    bottom: -1px;
+  }
+
   @media (min-resolution: 2dppx) {
     background-image: url("/img/hero@2x.jpg");
   }
