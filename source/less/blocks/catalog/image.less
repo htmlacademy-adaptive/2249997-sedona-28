@@ -58,10 +58,16 @@
     padding-top: 2px;
   }
 
-  .like-wrapper {
+  .image__like-wrapper {
     position: absolute;
     bottom: 27px;
     right: 6%;
+  }
+
+  .image:first-of-type {
+    .image__like-wrapper {
+      right: 3%;
+    }
   }
 }
 // DESKTOP
@@ -90,7 +96,7 @@
     opacity: 100%;
   }
 
-  .like-wrapper {
+  .image__like-wrapper {
     bottom: 30%;
     right: 5%;
   }
@@ -124,7 +130,7 @@
       padding-left: 23px;
     }
 
-    .like-wrapper {
+    .image__like-wrapper {
       right: 1.5%;
     }
   }
