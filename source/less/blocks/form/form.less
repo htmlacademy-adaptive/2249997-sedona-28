@@ -3,6 +3,13 @@
   font-size: 14px;
 }
 
+.form__title {
+  text-align: center;
+  padding-bottom: 19px;
+  position: relative;
+  font-size: 18px;
+}
+
 .form__input {
   background-color: rgba(242, 242, 242, 1);
   border: none;
@@ -69,6 +76,16 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .form__title {
+    padding-bottom: 27px;
+    font-size: 21px;
+    // padding-left: 10px;
+
+    &::before {
+      display: none;
+    }
+  }
+
   .form .form__name {
     border-right: solid 1px rgba(219, 219, 219, 1);
   }
@@ -130,6 +147,11 @@
   .form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form__title {
+    font-size: 21px;
+    margin: 0 auto;
   }
 
   .form .wrapper-tel-mail {
