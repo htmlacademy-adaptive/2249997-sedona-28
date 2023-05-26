@@ -131,6 +131,31 @@
 .form__wrapper-tel-mail {
   padding-bottom: 20px;
 }
+
+.visited-places-item {
+  .form__visited-places-item-control-mark {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    background-color: rgba(242, 242, 242, 1);
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+
+  .visited-places-item__control-label {
+    padding-left: 13px;
+    vertical-align: top;
+    position: relative;
+    top: 26px;
+    cursor: pointer;
+
+    &:disabled {
+      color: rgb(128, 128, 128);
+    }
+  }
+}
 // TABLET
 @media (min-width: @tablet-width) {
   .form__wrapper::before {
@@ -223,6 +248,30 @@
     padding-left: 10px;
   }
 
+  .form__checkbox {
+    .form__checkbox-title {
+      padding-bottom: 4px;
+      font-size: 18px;
+    }
+  }
+
+  .form__checkbox-wrapper {
+    grid-column: 1/3;
+    padding-top: 43px;
+
+    .form__checkbox {
+      border-top: 1px solid rgba(219, 219, 219, 1);
+
+      .form__checkbox-title {
+        padding-left: 63px;
+        padding-right: 65px;
+        position: relative;
+        top: 3px;
+        font-size: 21px;
+      }
+    }
+  }
+
   .form__visited-places-list {
     display: flex;
     flex-wrap: wrap;
@@ -300,6 +349,14 @@
 
   .form__grade-list .form__grade-item {
     padding-top: 29px;
+  }
+
+  .form__checkbox {
+    grid-column: 1/3;
+  }
+
+  .form__checkbox-wrapper {
+    padding-top: 68px;
   }
 
   .form__visited-places-list {
