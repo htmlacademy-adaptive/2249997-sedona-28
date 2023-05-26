@@ -3,6 +3,22 @@
   font-size: 14px;
 }
 
+.form__wrapper {
+  padding-top: 25px;
+  padding-bottom: 24px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: rgba(229, 229, 229, 1);
+    width: 106%;
+    left: -6%;
+    top: 0;
+  }
+}
+
 .form__title {
   text-align: center;
   padding-bottom: 19px;
@@ -81,8 +97,30 @@
   font-size: 12px;
 }
 
+.form__wrapper-name {
+  padding-right: 43px;
+}
+
+.form__wrapper-tel-mail {
+  padding-bottom: 20px;
+}
 // TABLET
 @media (min-width: @tablet-width) {
+  .form__wrapper::before {
+    display: none;
+  }
+
+  .form__wrapper {
+    border: none;
+    padding: 0;
+    padding-right: 43px;
+  }
+
+  .form__wrapper-name {
+    grid-column: 1/2;
+    border-right: 1px solid rgba(229, 229, 229, 1);
+  }
+
   .form__input:not(.form__input--phone-icon) {
     padding-right: 4px;
   }
@@ -99,7 +137,6 @@
   .form__title {
     padding-bottom: 27px;
     font-size: 21px;
-    // padding-left: 10px;
 
     &::before {
       display: none;
@@ -110,16 +147,12 @@
     left: -15px;
   }
 
-  .form__tel-mail {
-    .form__input {
-      padding-right: 30px;
-    }
+  .form__tel-mail .form__input {
+    padding-right: 30px;
   }
 
-  .form__name {
-    .form__input {
-      padding-right: 42px;
-    }
+  .form__name .form__input {
+    padding-right: 42px;
   }
 
   .form .form__wrapper-tel-mail {
@@ -166,6 +199,10 @@
     padding-right: 49px;
     padding-left: 17px;
     width: 190px;
+  }
+
+  .form__wrapper-tel-mail {
+    padding-left: 51px;
   }
 }
 
