@@ -1,3 +1,11 @@
+.title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  // line-height: 26px;
+  align-items: center;
+  color: #000000;
+}
+
 .title-phone {
   position: relative;
 
@@ -12,8 +20,8 @@
     background-color: rgba(230, 230, 230, 1);
     z-index: 10;
     position: absolute;
-    top: 19px;
-    right: -10px;
+    top: 20px;
+    right: 0;
   }
 }
 
@@ -31,21 +39,21 @@
     background-color: rgba(230, 230, 230, 1);
     z-index: 10;
     position: absolute;
-    top: 19px;
-    right: -10px;
+    top: 20px;
+    right: 0;
   }
 }
 
 // TABLET
 @media (min-width: @tablet-width) {
   .title-phone::after {
-    right: -12px;
-    top: 22px;
+    left: 238px;
+    top: 20px;
   }
 
   .title-email::after {
-    right: -14px;
-    top: 22px;
+    right: 0;
+    top: 20px;
   }
 }
 

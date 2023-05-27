@@ -3,6 +3,13 @@
   position: relative;
 }
 
+.main-nav__logo-wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 185px;
+  position: relative;
+}
+
 .main-nav {
   height: 56px;
 }
@@ -21,38 +28,18 @@
   border: none;
   background-color: inherit;
   z-index: 3;
-  right: 35px;
-  top: 15px;
+  right: 19px;
+  top: 17px;
+  background-image: url("/img/nav-burger-menu-icon.svg");
 
-  &::after {
-    content: "";
-    background-image: url("/img/nav-burger-menu-icon.svg");
-    background-repeat: no-repeat;
-    // background-color: #000000;
-    background-size: cover;
-    width: 23px;
-    height: 22px;
-    z-index: 3;
-    position: absolute;
-    top: 0;
-    left: 16px;
+  &:hover {
+    opacity: 0.6;
   }
 
-  &:active .main-nav__toggle-open::after {
-    opacity: 0.5;
+  &:active {
+    opacity: 0.3;
   }
 }
-
-
-// .burger-menu__icon--open {
-//   padding-left: 10px;
-
-// }
-
-// .main-nav__toggle-open:active .burger-menu__icon--open path {
-//   fill: rgba(129, 179, 210, 1);
-//   opacity: 0.5;
-// }
 
 // Реализация открытия и закрытия мобильного меню для моб версии
 @media (max-width: @mobile-width-only) {
@@ -61,9 +48,7 @@
   }
 
   .main-nav--opened .main-nav__toggle {
-    &::after {
-      background-image: url("/img/nav-menu-close-icon.svg");
-    }
+    background-image: url("/img/nav-menu-close-icon.svg");
   }
 
   .main-nav--nojs .main-nav__toggle {
@@ -110,5 +95,10 @@
   // Отключиаем кнопку
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__logo-wrapper {
+    order: 2;
+    position: relative;
   }
 }

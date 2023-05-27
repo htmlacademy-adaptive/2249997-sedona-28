@@ -54,6 +54,12 @@ const copyImages = () => {
     .pipe(gulp.dest('build/img'))
 }
 
+// favicon
+const favicon = () => {
+  return gulp.src('source/*.ico')
+    .pipe(gulp.dest('build'))
+}
+
 // WebP
 export const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
@@ -137,6 +143,7 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
+    favicon,
     sprite,
     createWebp
   ),
@@ -152,6 +159,7 @@ export default gulp.series(
     html,
     scripts,
     svg,
+    favicon,
     sprite,
     createWebp
   ),
